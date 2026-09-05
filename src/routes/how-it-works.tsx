@@ -8,7 +8,7 @@ export const Route = createFileRoute("/how-it-works")({
     seoHead({
       title: "How Construction Material Quotes Work in India | Rodiwala",
       description:
-        "See how Rodiwala confirms requirements, availability, pricing and delivery for sites across India.",
+        "Requirement bhejo, availability aur delivered rate check hota hai, phir dispatch ka time fix. Rodiwala ka poora quote process, India bhar ki sites ke liye.",
       path: "/how-it-works",
     }),
   component: Page,

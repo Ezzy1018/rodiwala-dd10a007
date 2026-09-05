@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
     seoHead({
       title: "About Rodiwala Construction Material Supply",
       description:
-        "Rodiwala helps contractors, builders, site engineers and homeowners across India source construction materials and coordinate delivery.",
+        "Rodiwala thekedar, builders, site engineers aur ghar bana rahe logon ke liye construction material sourcing aur delivery coordination karta hai, India bhar mein.",
       path: "/about",
     }),
   component: Page,

@@ -7,7 +7,7 @@ export const Route = createFileRoute("/aggregate/")({
     seoHead({
       title: "10 mm & 20 mm Rodi Aggregate | Rodiwala",
       description:
-        "Compare 10 mm and 20 mm rodi aggregate requirements and request delivered pricing for your construction site.",
+        "10 mm aur 20 mm rodi aggregate mein farak samjho, phir apni site ke liye quantity aur location bhejkar delivered rate lo.",
       path: "/aggregate",
     }),
   component: Page,
