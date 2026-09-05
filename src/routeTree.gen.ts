@@ -10,7 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as AggregateRouteImport } from './routes/aggregate'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DeliveryAreasRouteImport } from './routes/delivery-areas'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as MSandRouteImport } from './routes/m-sand'
 import { Route as MaterialsRouteImport } from './routes/materials'
 import { Route as ReadyMixConcreteRouteImport } from './routes/ready-mix-concrete'
@@ -25,9 +29,29 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AggregateRoute = AggregateRouteImport.update({
   id: '/aggregate',
   path: '/aggregate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeliveryAreasRoute = DeliveryAreasRouteImport.update({
+  id: '/delivery-areas',
+  path: '/delivery-areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MSandRoute = MSandRouteImport.update({
@@ -73,7 +97,11 @@ const Aggregate20MmRodiRoute = Aggregate20MmRodiRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/aggregate': typeof AggregateRouteWithChildren
+  '/contact': typeof ContactRoute
+  '/delivery-areas': typeof DeliveryAreasRoute
+  '/how-it-works': typeof HowItWorksRoute
   '/m-sand': typeof MSandRoute
   '/materials': typeof MaterialsRoute
   '/ready-mix-concrete': typeof ReadyMixConcreteRoute
@@ -85,6 +113,10 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/delivery-areas': typeof DeliveryAreasRoute
+  '/how-it-works': typeof HowItWorksRoute
   '/m-sand': typeof MSandRoute
   '/materials': typeof MaterialsRoute
   '/ready-mix-concrete': typeof ReadyMixConcreteRoute
@@ -97,7 +129,11 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/aggregate': typeof AggregateRouteWithChildren
+  '/contact': typeof ContactRoute
+  '/delivery-areas': typeof DeliveryAreasRoute
+  '/how-it-works': typeof HowItWorksRoute
   '/m-sand': typeof MSandRoute
   '/materials': typeof MaterialsRoute
   '/ready-mix-concrete': typeof ReadyMixConcreteRoute
@@ -111,7 +147,11 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/about'
     | '/aggregate'
+    | '/contact'
+    | '/delivery-areas'
+    | '/how-it-works'
     | '/m-sand'
     | '/materials'
     | '/ready-mix-concrete'
@@ -123,6 +163,10 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
+    | '/contact'
+    | '/delivery-areas'
+    | '/how-it-works'
     | '/m-sand'
     | '/materials'
     | '/ready-mix-concrete'
@@ -134,7 +178,11 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/aggregate'
+    | '/contact'
+    | '/delivery-areas'
+    | '/how-it-works'
     | '/m-sand'
     | '/materials'
     | '/ready-mix-concrete'
@@ -147,7 +195,11 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   AggregateRoute: typeof AggregateRouteWithChildren
+  ContactRoute: typeof ContactRoute
+  DeliveryAreasRoute: typeof DeliveryAreasRoute
+  HowItWorksRoute: typeof HowItWorksRoute
   MSandRoute: typeof MSandRoute
   MaterialsRoute: typeof MaterialsRoute
   ReadyMixConcreteRoute: typeof ReadyMixConcreteRoute
@@ -164,11 +216,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/aggregate': {
       id: '/aggregate'
       path: '/aggregate'
       fullPath: '/aggregate'
       preLoaderRoute: typeof AggregateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/delivery-areas': {
+      id: '/delivery-areas'
+      path: '/delivery-areas'
+      fullPath: '/delivery-areas'
+      preLoaderRoute: typeof DeliveryAreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/m-sand': {
@@ -248,7 +328,11 @@ const AggregateRouteWithChildren = AggregateRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   AggregateRoute: AggregateRouteWithChildren,
+  ContactRoute: ContactRoute,
+  DeliveryAreasRoute: DeliveryAreasRoute,
+  HowItWorksRoute: HowItWorksRoute,
   MSandRoute: MSandRoute,
   MaterialsRoute: MaterialsRoute,
   ReadyMixConcreteRoute: ReadyMixConcreteRoute,
