@@ -17,35 +17,36 @@ function Page() {
   const audiences = [
     {
       Icon: HardHat,
-      title: "Contractors",
-      text: "Bulk or recurring requirements with delivery coordination.",
+      title: "Thekedar aur contractors",
+      text: "Bulk ya baar-baar aane wali requirement, delivery coordination ke saath.",
     },
     {
       Icon: Ruler,
-      title: "Site engineers",
-      text: "Specification-led enquiries with clear material and access details.",
+      title: "Site engineers aur supervisors",
+      text: "Specification wali enquiry, clear material aur access details ke saath.",
     },
     {
       Icon: House,
-      title: "Homeowners",
-      text: "Straightforward help turning a site requirement into a quote request.",
+      title: "Ghar bana rahe log",
+      text: "Site ki requirement ko seedhe quote request mein badalne ki simple madad.",
     },
   ];
   return (
     <ContentPage
       eyebrow="About Rodiwala"
-      title="Built around a clearer material enquiry."
-      intro="Rodiwala helps contractors, site engineers, builders and homeowners across India source construction materials and coordinate delivery."
+      title="Rodiwala site ke material ko simple banata hai."
+      intro="Thekedar, builders, site engineers, supervisors aur ghar bana rahe log — sab India bhar se material mangwane aur delivery coordinate karne ke liye Rodiwala se baat karte hain."
       image={heroImage}
     >
       <section className="about-intro">
         <div>
-          <p className="eyebrow">What we do</p>
-          <h2 className="section-title">Materials, pricing and delivery—confirmed for the job.</h2>
+          <p className="eyebrow">Hum karte kya hain</p>
+          <h2 className="section-title">Material, rate aur delivery — kaam ke hisaab se confirm.</h2>
         </div>
         <p>
-          We receive the requirement, confirm material and delivery feasibility, provide a quote and
-          coordinate fulfilment. We do not publish fixed prices that can quickly become inaccurate.
+          Requirement aati hai, material aur delivery feasibility check hoti hai, quote diya jata
+          hai aur fulfilment coordinate hota hai. Fixed price isliye publish nahi karte kyunki wo
+          jaldi galat ho jate hain.
         </p>
       </section>
       <div className="factor-grid mt-14">
@@ -60,11 +61,11 @@ function Page() {
       <section className="trust-strip">
         <ShieldCheck />
         <div>
-          <h2>Clarity before claims</h2>
+          <h2>Pehle clarity, phir dawe</h2>
           <p>
-            Enquiries are welcome from anywhere in India, and each one is checked honestly. No
-            blanket stock, quality or timing promise is made. Business details and verified proof
-            appear only after approval.
+            Enquiry India mein kahin se bhi kar sakte ho, har ek honestly check hoti hai. Stock,
+            quality ya timing ka blanket promise nahi karte. Business details aur verified proof
+            approval ke baad hi dikhte hain.
           </p>
         </div>
       </section>

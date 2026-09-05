@@ -17,14 +17,14 @@ function Page() {
   return (
     <ContentPage
       eyebrow="Aggregate guide"
-      title="Choose the aggregate size specified for your work."
-      intro="10 mm and 20 mm are distinct requirements. Compare common requests, then send the selected size, quantity, location and date."
+      title="10 mm ya 20 mm rodi? Jo specification hai, wahi bhejo."
+      intro="10 mm aur 20 mm alag requirement hain. Dono ka farak dekho, phir selected size, quantity, location aur date bhej do."
       image={getMaterial("20-mm-rodi").image}
     >
       <div className="mb-10 max-w-2xl">
         <h2 className="section-title">Core aggregate sizes</h2>
         <p className="mt-3 text-muted-foreground">
-          Pick the size your contractor or engineer has specified, then send the requirement.
+          Jo size contractor ya engineer ne bataya hai wahi chuno, phir requirement bhejo.
         </p>
       </div>
       <div className="catalogue-grid catalogue-grid-pair">
@@ -35,24 +35,24 @@ function Page() {
       <section className="comparison-section">
         <div>
           <p className="eyebrow">Quick comparison</p>
-          <h2 className="section-title">Two sizes. Different site requirements.</h2>
+          <h2 className="section-title">Do size, alag-alag site requirement.</h2>
           <p>
-            Rodiwala captures the requested size but does not prescribe structural mixes. Confirm
-            suitability with your contractor or engineer.
+            Rodiwala aapka manga hua size note karta hai, structural mix decide nahi karta.
+            Suitability apne contractor ya engineer se confirm karo.
           </p>
         </div>
         <div className="comparison-table">
           <div>
             <strong>10 mm Rodi</strong>
-            <span>Smaller coarse aggregate</span>
-            <span>Dense reinforcement areas</span>
+            <span>Chhota coarse aggregate</span>
+            <span>Dense reinforcement wale areas</span>
             <span>Project-specific mixes</span>
           </div>
           <div>
             <strong>20 mm Rodi</strong>
-            <span>Common coarse aggregate</span>
+            <span>Sabse aam coarse aggregate</span>
             <span>Concrete-related work</span>
-            <span>Base and structural site work</span>
+            <span>Base aur structural site work</span>
           </div>
         </div>
       </section>
