@@ -1,8 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { CheckCircle2 } from "lucide-react";
 import { ContentPage, MaterialTile } from "@/components/content-page";
 import { StructuredData } from "@/components/structured-data";
-import { materials } from "@/lib/materials";
+import { materials, quoteHref } from "@/lib/materials";
 import { seoHead } from "@/lib/seo";
 
 const faqs = [
