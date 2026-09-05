@@ -28,4 +28,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://rodiwala.lovable.app/sitemap.xml
+Sitemap: https://rodiwala.vercel.app/sitemap.xml

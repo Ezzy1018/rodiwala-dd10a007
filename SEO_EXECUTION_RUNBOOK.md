@@ -57,7 +57,7 @@ The live sitemap previously omitted that URL. The first execution task is theref
 - Lovable's sitemap now includes the buying page and material routes.
 - A Git-connected Vercel production fallback is live at `https://rodiwala.vercel.app`; it also returns `200` for the priority routes.
 - The Google Search Console HTML verification file is deployed at `https://rodiwala.vercel.app/googlee1858dd9e2bcdb57.html` and returns `200` with the exact token.
-- The canonical URLs and sitemap currently prefer `https://rodiwala.lovable.app`.
+- The canonical URLs and sitemap now prefer `https://rodiwala.vercel.app`.
 - Google Search Console is not authenticated in the available browser session, so sitemap submission and URL Inspection remain owner-authorised actions.
 - Google Business Profile is not authenticated in the available browser session, and business facts such as service areas and hours still require owner confirmation.
 
@@ -68,7 +68,7 @@ The live sitemap previously omitted that URL. The first execution task is theref
 - Business category: quote-led construction-material sourcing.
 - Materials represented on the site: 10 mm aggregate, 20 mm aggregate, stone dust, M-sand/crushed sand and RMC.
 - Public contact number currently represented in the site: `+91 94161 65465`.
-- Current public host: `https://rodiwala.lovable.app`.
+- Current public host: `https://rodiwala.vercel.app`.
 
 ### REQUIRED INPUT: owner facts before local SEO or stronger commercial claims
 
@@ -108,7 +108,7 @@ The build must pass. Changed files must pass the repository lint configuration. 
 After publishing, run:
 
 ```sh
-base_url="https://rodiwala.lovable.app"
+base_url="https://rodiwala.vercel.app"
 for path in \
   / \
   /buy-construction-material \
@@ -151,7 +151,7 @@ These actions require an authenticated owner session. They cannot be completed f
 
 1. Add the exact production property.
 2. Verify ownership using the approved method.
-3. Submit `https://rodiwala.lovable.app/sitemap.xml`, or the final-domain sitemap after migration.
+3. Submit `https://rodiwala.vercel.app/sitemap.xml`.
 4. Inspect and request indexing for:
    - `/`
    - `/buy-construction-material`

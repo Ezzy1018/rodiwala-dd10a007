@@ -1,4 +1,4 @@
-export const siteUrl = "https://rodiwala.lovable.app";
+export const siteUrl = "https://rodiwala.vercel.app";
 export const siteName = "Rodiwala";
 
 export function pageUrl(path: string) {
