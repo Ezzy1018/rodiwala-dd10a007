@@ -16,16 +16,16 @@ const faqs = [
   },
   {
     name: "Where does Rodiwala deliver construction material?",
-    text: "Rodiwala accepts enquiries across Delhi NCR and Uttar Pradesh. Feasibility depends on the exact locality or pin code, quantity, route, vehicle access and required date.",
+    text: "Rodiwala accepts enquiries from construction sites across India. Feasibility depends on the exact city or pin code, quantity, route, vehicle access and required date.",
   },
 ];
 
 export const Route = createFileRoute("/buy-construction-material")({
   head: () =>
     seoHead({
-      title: "Buy Construction Material in Delhi NCR | Rodiwala",
+      title: "Buy Construction Material in India | Rodiwala",
       description:
-        "Buy or source aggregate, stone dust, M-sand, RMC and other construction materials across Delhi NCR and Uttar Pradesh. Send Rodiwala your requirement for a delivered quote.",
+        "Buy or source aggregate, stone dust, M-sand, RMC and other construction materials across India. Send Rodiwala your requirement for a delivered quote.",
       path: "/buy-construction-material",
     }),
   component: Page,
@@ -37,7 +37,7 @@ function Page() {
       <ContentPage
         eyebrow="Buy construction material"
         title="Buy the material your site actually needs."
-        intro="Rodiwala helps contractors, builders, site engineers and homeowners source construction materials across Delhi NCR and Uttar Pradesh through a clear, quote-led process."
+        intro="Rodiwala helps contractors, builders, site engineers and homeowners across India source construction materials through a clear, quote-led process."
         quoteMaterial="Buy construction material"
       >
         <section className="detail-grid">

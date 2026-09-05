@@ -14,9 +14,9 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () =>
     seoHead({
-      title: "Buy Construction Materials in Delhi NCR | Rodiwala",
+      title: "Construction Material Supplier in India | Rodiwala",
       description:
-        "Buy or source aggregate, stone dust, M-sand and RMC across Delhi NCR and Uttar Pradesh. Share your requirement with Rodiwala for a delivered quote.",
+        "Rodiwala supplies 10 mm and 20 mm aggregate (rodi), stone dust, M-sand and ready-mix concrete to sites across India. Send your requirement for delivered pricing.",
       path: "/",
     }),
   component: Index,
@@ -36,18 +36,22 @@ function Index() {
         <div className="home-hero-content">
           <p className="eyebrow text-accent">
             <span className="status-dot" />
-            Delhi NCR & Uttar Pradesh
+            Construction material supply across India
           </p>
           <h1>Buy construction materials for your site.</h1>
           <p>
-            Rodiwala sources 10 mm and 20 mm aggregate, stone dust, M-sand and ready-mix concrete,
-            then confirms the delivered quote for your quantity, site and date.
+            Rodiwala sources 10 mm and 20 mm aggregate (rodi), stone dust, M-sand and ready-mix
+            concrete, then confirms the delivered quote for your quantity, site and date, wherever
+            in India you are building.
           </p>
           <div className="mt-8">
             <QuoteButtons context="Homepage hero" />
           </div>
         </div>
         <div className="home-hero-facts">
+          <span>
+            <strong>India</strong>-wide enquiries
+          </span>
           <span>
             <strong>5</strong> core materials
           </span>
@@ -128,8 +132,9 @@ function Index() {
             <p className="eyebrow">Delivery coverage</p>
             <h2 className="section-title">Your location shapes the quote.</h2>
             <p className="mt-4 max-w-lg text-lg text-muted-foreground">
-              Across Delhi NCR and Uttar Pradesh, feasibility depends on source, load, route and
-              site access. Share the exact locality or pin code before planning delivery.
+              Rodiwala takes requirements from sites across India. Feasibility depends on the
+              nearest source, load, route and site access, so share the exact city, locality or pin
+              code and the route gets checked for you.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-foreground">
               {[
@@ -193,8 +198,8 @@ function Index() {
                 "We can clarify what is available, but technical suitability should be confirmed with your contractor or engineer.",
               ],
               [
-                "Do you deliver everywhere in UP?",
-                "No blanket promise is made. Delivery is checked against the exact locality, quantity and vehicle access.",
+                "Do you deliver anywhere in India?",
+                "Enquiries are welcome from anywhere in India. No blanket promise is made. Every delivery is checked against the nearest source, exact locality, quantity and vehicle access.",
               ],
             ].map(([q, a]) => (
               <details key={q}>
@@ -224,8 +229,8 @@ function Index() {
               "We can clarify what is available, but technical suitability should be confirmed with your contractor or engineer.",
             ],
             [
-              "Do you deliver everywhere in UP?",
-              "No blanket promise is made. Delivery is checked against the exact locality, quantity and vehicle access.",
+              "Do you deliver anywhere in India?",
+              "Enquiries are welcome from anywhere in India. No blanket promise is made. Every delivery is checked against the nearest source, exact locality, quantity and vehicle access.",
             ],
           ].map(([name, text]) => ({
             "@type": "Question",

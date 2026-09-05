@@ -2,13 +2,13 @@
 
 ## TLDR
 
-The fastest realistic win is to own branded searches for `Rodiwala`, `Rodi Wala` and close spelling variants, then build authority for local commercial searches such as `construction material supplier Delhi NCR`, `buy construction material Delhi NCR`, `rodi supplier`, `stone dust supplier`, `M-sand supplier` and `RMC supplier`.
+The fastest realistic win is to own branded searches for `Rodiwala`, `Rodi Wala` and close spelling variants, then build authority for commercial searches such as `construction material supplier India`, `buy construction material`, `rodi supplier`, `stone dust supplier`, `M-sand supplier` and `RMC supplier`.
 
 The broad query `construction material` is highly competitive. It should be treated as a long-term category goal, not the first success criterion. Page one for a brand query can become realistic after indexing and consistent business signals. Page one for local commercial terms will require a verified local presence, reviews, useful pages and external references over several months.
 
 ## What has been implemented in this repository
 
-- Reworked the homepage title, description and H1 around buying construction materials in Delhi NCR and Uttar Pradesh.
+- Reworked the homepage title, description and H1 around construction-material supply across India.
 - Added `/buy-construction-material` as a dedicated high-intent landing page.
 - Added unique canonical URLs, robots directives, Open Graph metadata and Twitter metadata to the key routes.
 - Added server-rendered Organization, WebSite, Service and FAQ JSON-LD without inventing an address, reviews, prices, certifications or opening hours.
@@ -22,9 +22,9 @@ The broad query `construction material` is highly competitive. It should be trea
 | Intent | Primary targets | Best page | Notes |
 | --- | --- | --- | --- |
 | Brand | `Rodiwala`, `Rodi Wala`, `Roadi Wala` | Homepage, Google Business Profile | Monitor spelling variants; do not stuff misspellings into every page. |
-| Local buying | `buy construction material Delhi NCR`, `construction material supplier Delhi NCR` | `/buy-construction-material`, homepage | Needs real service-area proof and external local signals. |
-| Aggregate | `10 mm rodi supplier`, `20 mm rodi supplier`, `aggregate supplier Delhi NCR` | Material pages and `/aggregate` | Add verified specifications, units and delivery details when available. |
-| Material-specific | `stone dust supplier`, `M-sand supplier`, `RMC supplier Delhi NCR` | `/stone-dust`, `/m-sand`, `/ready-mix-concrete` | Add technical details only after contractor or supplier review. |
+| Commercial buying | `buy construction material`, `construction material supplier India` | `/buy-construction-material`, homepage | Needs real service-area proof and external business signals. |
+| Aggregate | `10 mm rodi supplier`, `20 mm rodi supplier`, `aggregate supplier India` | Material pages and `/aggregate` | Add verified specifications, units and delivery details when available. |
+| Material-specific | `stone dust supplier`, `M-sand supplier`, `RMC supplier India` | `/stone-dust`, `/m-sand`, `/ready-mix-concrete` | Add technical details only after contractor or supplier review. |
 | Informational | `10 mm vs 20 mm aggregate`, `M-sand uses`, `what is stone dust` | Guides to be created | Each guide needs first-hand input, an author and a review date. |
 | Location | `construction material supplier Noida`, `... Ghaziabad`, `... Greater Noida` | Location pages only after confirmation | Do not create thin doorway pages or claim cities that are not actually served. |
 
@@ -55,7 +55,7 @@ These cannot be completed safely from the repository alone:
 - Add verified details to every material page: available units, typical order context, source or quality basis, lead time range and delivery limits.
 - Add one reviewed guide per week: `10 mm vs 20 mm aggregate`, `M-sand vs river sand`, `stone dust uses`, and `how to request an RMC quote`.
 - Add an author or reviewer line to technical guidance. A contractor or engineer should review suitability claims.
-- Add unique pages for Noida, Ghaziabad, Greater Noida, Gurgaon or other cities only after Rodiwala confirms actual service coverage and each page has unique local information.
+- Add unique pages for major cities or regions only after Rodiwala confirms actual service coverage and each page has unique local information.
 - Publish original delivery or yard images with accurate captions and alt text.
 
 ### Weeks 5–8: build local authority

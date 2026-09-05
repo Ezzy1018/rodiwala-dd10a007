@@ -6,9 +6,9 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/delivery-areas")({
   head: () =>
     seoHead({
-      title: "Construction Material Delivery in Delhi NCR & UP | Rodiwala",
+      title: "Construction Material Delivery Across India | Rodiwala",
       description:
-        "Check construction material delivery feasibility across Delhi NCR and Uttar Pradesh. Share your locality or pin code for a route and freight check.",
+        "Check construction material delivery feasibility for your site anywhere in India. Share your city, locality or pin code for a route and freight check.",
       path: "/delivery-areas",
     }),
   component: Page,
@@ -18,7 +18,7 @@ function Page() {
     {
       Icon: MapPin,
       title: "Exact location",
-      text: "Share the locality or pin code so route and source distance can be reviewed.",
+      text: "Share the city, locality or pin code anywhere in India so route and source distance can be reviewed.",
     },
     {
       Icon: Truck,
@@ -35,7 +35,7 @@ function Page() {
     <ContentPage
       eyebrow="Delivery coverage"
       title="Tell us the site. We’ll check the route."
-      intro="Rodiwala accepts enquiries across Delhi NCR and Uttar Pradesh. Every delivery is checked against the actual load, route and access."
+      intro="Rodiwala accepts construction material enquiries from sites across India. Every delivery is checked against the nearest source, actual load, route and site access."
       quoteMaterial="Other material"
       image={deliveryImage}
     >
@@ -48,6 +48,33 @@ function Page() {
           </article>
         ))}
       </div>
+      <section className="mt-20">
+        <p className="eyebrow">Enquiry coverage</p>
+        <h2 className="section-title">Sites across India, one conversation.</h2>
+        <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
+          Requirements reach us from metros, tier-2 cities, industrial belts and semi-urban sites.
+          Tell us where you are building and the nearest workable source and route are reviewed for
+          you.
+        </p>
+        <div className="mt-7 flex flex-wrap gap-3">
+          {[
+            "North India",
+            "South India",
+            "West India",
+            "East India",
+            "Central India",
+            "North East India",
+            "Metro cities",
+            "Tier-2 & tier-3 cities",
+            "Industrial corridors",
+            "Semi-urban sites",
+          ].map((region) => (
+            <span className="request-chip" key={region}>
+              {region}
+            </span>
+          ))}
+        </div>
+      </section>
       <section className="mt-20 grid gap-10 bg-secondary p-7 md:grid-cols-2 md:p-10">
         <div>
           <p className="eyebrow">What gets confirmed</p>

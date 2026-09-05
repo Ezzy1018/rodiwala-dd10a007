@@ -20,9 +20,9 @@ export function SiteStructuredData() {
             url: siteUrl,
             logo: `${siteUrl}/favicon.png`,
             description:
-              "Construction material sourcing and delivery coordination for Delhi NCR and Uttar Pradesh.",
+              "Construction material sourcing and delivery coordination for sites across India.",
             telephone: "+91-9416165465",
-            areaServed: ["Delhi NCR", "Uttar Pradesh"],
+            areaServed: { "@type": "Country", name: "India" },
             contactPoint: {
               "@type": "ContactPoint",
               telephone: "+91-9416165465",
@@ -64,7 +64,7 @@ export function MaterialStructuredData({
         description,
         serviceType: "Construction material supply",
         provider: { "@id": `${siteUrl}/#organization` },
-        areaServed: ["Delhi NCR", "Uttar Pradesh"],
+        areaServed: { "@type": "Country", name: "India" },
         url: pageUrl(path),
       }}
     />

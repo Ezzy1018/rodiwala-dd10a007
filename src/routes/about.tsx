@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
     seoHead({
       title: "About Rodiwala Construction Material Supply",
       description:
-        "Rodiwala helps contractors, builders, site engineers and homeowners source construction materials and coordinate delivery.",
+        "Rodiwala helps contractors, builders, site engineers and homeowners across India source construction materials and coordinate delivery.",
       path: "/about",
     }),
   component: Page,
@@ -35,7 +35,7 @@ function Page() {
     <ContentPage
       eyebrow="About Rodiwala"
       title="Built around a clearer material enquiry."
-      intro="Rodiwala helps contractors, site engineers, builders and homeowners source construction materials and coordinate delivery."
+      intro="Rodiwala helps contractors, site engineers, builders and homeowners across India source construction materials and coordinate delivery."
       image={heroImage}
     >
       <section className="about-intro">
@@ -62,8 +62,9 @@ function Page() {
         <div>
           <h2>Clarity before claims</h2>
           <p>
-            No blanket stock, quality, timing or geographic promise is made. Business details and
-            verified proof appear only after approval.
+            Enquiries are welcome from anywhere in India, and each one is checked honestly. No
+            blanket stock, quality or timing promise is made. Business details and verified proof
+            appear only after approval.
           </p>
         </div>
       </section>

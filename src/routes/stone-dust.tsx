@@ -5,7 +5,7 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/stone-dust")({
   head: () =>
     seoHead({
-      title: "Stone Dust Supplier in Delhi NCR | Rodiwala",
+      title: "Stone Dust Supplier in India | Rodiwala",
       description:
         "Request delivered pricing for stone dust for filling, levelling, paver bedding and site work.",
       path: "/stone-dust",

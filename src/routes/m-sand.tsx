@@ -5,9 +5,9 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/m-sand")({
   head: () =>
     seoHead({
-      title: "M-Sand Supplier in Delhi NCR | Rodiwala",
+      title: "M-Sand Supplier in India | Rodiwala",
       description:
-        "Request delivered pricing for M-sand or crushed sand for construction sites across Delhi NCR and Uttar Pradesh.",
+        "Request delivered pricing for M-sand or crushed sand for construction sites across India.",
       path: "/m-sand",
     }),
   component: () => <MaterialPage material={getMaterial("m-sand")} />,

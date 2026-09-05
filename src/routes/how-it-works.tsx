@@ -6,9 +6,9 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/how-it-works")({
   head: () =>
     seoHead({
-      title: "How to Buy Construction Material | Rodiwala",
+      title: "How Construction Material Quotes Work in India | Rodiwala",
       description:
-        "See how Rodiwala confirms construction material requirements, availability, delivered pricing and dispatch timing.",
+        "See how Rodiwala confirms requirements, availability, pricing and delivery for sites across India.",
       path: "/how-it-works",
     }),
   component: Page,

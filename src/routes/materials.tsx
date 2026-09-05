@@ -5,9 +5,9 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/materials")({
   head: () =>
     seoHead({
-      title: "Construction Materials Supplier | Rodiwala",
+      title: "Construction Materials Supplier in India | Rodiwala",
       description:
-        "Browse aggregate, stone dust, M-sand, RMC and other construction materials available for sourcing across Delhi NCR and Uttar Pradesh.",
+        "Explore Rodiwala's core and sourced construction materials for projects across India.",
       path: "/materials",
     }),
   component: Page,
@@ -17,7 +17,7 @@ function Page() {
     <ContentPage
       eyebrow="Material catalogue"
       title="The right material starts with the right requirement."
-      intro="Browse the five core materials, compare their common applications and send the exact quantity, site and date for delivered pricing."
+      intro="Browse the five core materials, compare their common applications and send the exact quantity, site location anywhere in India and required date for delivered pricing."
       image={getMaterial("20-mm-rodi").image}
     >
       <div className="catalogue-grid">

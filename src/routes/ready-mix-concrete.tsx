@@ -5,9 +5,9 @@ import { seoHead } from "@/lib/seo";
 export const Route = createFileRoute("/ready-mix-concrete")({
   head: () =>
     seoHead({
-      title: "Ready-Mix Concrete Supplier in Delhi NCR | Rodiwala",
+      title: "Ready-Mix Concrete Supplier in India | Rodiwala",
       description:
-        "Request an RMC quote with grade, volume, pump need, site and pour date across Delhi NCR and Uttar Pradesh.",
+        "Request an RMC quote with grade, volume, pump need, site and pour date across India.",
       path: "/ready-mix-concrete",
     }),
   component: () => <MaterialPage material={getMaterial("ready-mix-concrete")} />,

@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
     seoHead({
       title: "Contact Rodiwala for Construction Materials",
       description:
-        "Call or WhatsApp Rodiwala with your construction material, quantity, location and date for a delivered quote.",
+        "Call or WhatsApp Rodiwala from anywhere in India with your construction material requirement.",
       path: "/contact",
     }),
   component: Page,
@@ -19,7 +19,7 @@ function Page() {
     <ContentPage
       eyebrow="Contact"
       title="Talk to Rodiwala about your site requirement."
-      intro="Share the material, quantity, delivery location and required date for the most useful response."
+      intro="Share the material, quantity, delivery location anywhere in India and required date for the most useful response."
       image={heroImage}
     >
       <div className="contact-layout">
@@ -50,7 +50,7 @@ function Page() {
             {[
               "Material and size or grade",
               "Quantity and unit",
-              "Delivery locality or pin code",
+              "Delivery city, locality or pin code",
               "Required date and access notes",
             ].map((item) => (
               <li key={item}>
