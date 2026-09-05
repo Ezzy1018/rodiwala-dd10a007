@@ -1,0 +1,14 @@
+import { Link } from "@tanstack/react-router";
+import { ArrowRight, CheckCircle2, MessageCircle, Phone } from "lucide-react";
+import { QuoteBuilder } from "./quote-builder";
+import { phoneDisplay, phoneHref, type Material } from "@/lib/materials";
+
+export function ContentPage({ eyebrow, title, intro, children, quoteMaterial }: { eyebrow: string; title: string; intro: string; children: React.ReactNode; quoteMaterial?: string }) {
+  return <main><section className="bg-secondary py-14 md:py-20"><div className="mx-auto max-w-5xl px-5"><p className="eyebrow">{eyebrow}</p><h1 className="mt-4 max-w-4xl font-display text-4xl font-bold leading-tight text-foreground md:text-6xl">{title}</h1><p className="mt-5 max-w-3xl text-lg leading-relaxed text-muted-foreground">{intro}</p><div className="mt-7 flex flex-wrap gap-3"><Link to="/request-quote" className="btn-primary"><MessageCircle size={18}/>Get quote on WhatsApp</Link><a href={`tel:${phoneHref}`} className="btn-outline"><Phone size={18}/>Call {phoneDisplay}</a></div></div></section><section className="bg-background py-14"><div className="mx-auto max-w-5xl px-5">{children}</div></section>{quoteMaterial && <section className="bg-primary py-14"><div className="mx-auto max-w-7xl px-5"><QuoteBuilder initialMaterial={quoteMaterial} source={title}/></div></section>}</main>;
+}
+
+export function MaterialPage({ material }: { material: Material }) {
+  return <ContentPage eyebrow="Core material" title={material.name} intro={material.description} quoteMaterial={material.name}><div className="grid items-start gap-10 md:grid-cols-2"><img src={material.image} alt={`Illustrative ${material.name} texture`} width={600} height={512} className="aspect-[4/3] w-full rounded-3xl object-cover"/><div><h2 className="font-display text-3xl font-bold">What to share for a useful quote</h2><ul className="mt-5 space-y-3">{[...material.applications,"Quantity and preferred unit","Delivery locality or pin code","Required delivery date and site access"].map((item)=><li className="flex gap-3 text-muted-foreground" key={item}><CheckCircle2 className="mt-0.5 shrink-0 text-primary" size={19}/>{item}</li>)}</ul><div className="mt-7 rounded-xl border border-border bg-secondary p-5"><strong className="font-display text-primary">Before ordering</strong><p className="mt-2 text-sm text-muted-foreground">{material.quoteNote}</p></div></div></div></ContentPage>;
+}
+
+export function CardLink({ to, title, text }: { to: string; title: string; text: string }) { return <Link to={to} className="block rounded-2xl border border-border bg-card p-5 transition-colors hover:bg-secondary"><h3 className="font-display text-lg font-bold">{title}</h3><p className="mt-2 text-sm text-muted-foreground">{text}</p><span className="text-link mt-5">Open page <ArrowRight size={15}/></span></Link>; }
