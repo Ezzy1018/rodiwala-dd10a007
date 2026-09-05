@@ -53,7 +53,7 @@ function Index() {
             <strong>India</strong>-wide enquiries
           </span>
           <span>
-            <strong>5</strong> core materials
+            <strong>6</strong> core materials
           </span>
           <span>
             <strong>1</strong> direct conversation
@@ -81,7 +81,7 @@ function Index() {
             ))}
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
-            Cement, TMT steel, bricks, blocks, pavers ya koi aur samaan chahiye?{" "}
+            TMT steel, bricks, blocks, pavers ya koi aur samaan chahiye?{" "}
             <Link to="/buy-construction-material" className="font-semibold text-primary">
               Requirement bhejo.
             </Link>

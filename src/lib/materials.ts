@@ -3,6 +3,7 @@ import aggregate20 from "@/assets/aggregate-20mm.jpg";
 import stoneDust from "@/assets/stone-dust.jpg";
 import mSand from "@/assets/m-sand.jpg";
 import rmc from "@/assets/rmc.jpg";
+import cement from "@/assets/cement.jpg";
 
 export type Material = {
   slug: string;
@@ -11,7 +12,8 @@ export type Material = {
     | "/aggregate/20-mm-rodi"
     | "/stone-dust"
     | "/m-sand"
-    | "/ready-mix-concrete";
+    | "/ready-mix-concrete"
+    | "/cement";
   name: string;
   shortName: string;
   image: string;
@@ -88,6 +90,18 @@ export const materials: Material[] = [
       "Time-sensitive concrete supply",
     ],
     quoteNote: "Grade, cubic metres, pump need, site access aur pour date-time share kar do.",
+  },
+  {
+    slug: "cement",
+    href: "/cement",
+    name: "Cement",
+    shortName: "Cement",
+    image: cement,
+    description:
+      "OPC ya PPC cement, bags mein, brand aur grade availability ke hisaab se. Foundation, RCC, plaster aur masonry — har site kaam ke liye base material.",
+    applications: ["RCC aur foundation work", "Plaster aur masonry", "Bulk site requirement"],
+    quoteNote:
+      "Brand preference, grade (OPC 43/53 ya PPC) aur kitne bags chahiye, ye bhejo taki quote sahi bane.",
   },
 ];
 

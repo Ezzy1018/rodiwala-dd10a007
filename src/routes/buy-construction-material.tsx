@@ -85,15 +85,15 @@ function Page() {
         <section className="mt-20 grid gap-8 border-t border-border pt-12 md:grid-cols-[.8fr_1.2fr]">
           <div>
             <p className="eyebrow">Core range ke alawa</p>
-            <h2 className="section-title">Cement ya koi aur samaan chahiye?</h2>
+            <h2 className="section-title">Kuch aur samaan chahiye?</h2>
           </div>
           <div>
             <p className="text-lg text-muted-foreground">
-              Cement, TMT steel, bricks, blocks, pavers ya koi aur project material bhi pooch sakte
+              TMT steel, bricks, blocks, pavers ya koi aur project material bhi pooch sakte
               ho. Exact specification bhejo, source aur delivery feasibility check ho jayegi.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              {["Cement", "TMT steel", "Bricks & blocks", "Pavers", "Other sand"].map((x) => (
+              {["TMT steel", "Bricks & blocks", "Pavers", "Other sand"].map((x) => (
                 <span className="request-chip" key={x}>
                   {x}
                 </span>
