@@ -56,6 +56,7 @@ The live sitemap previously omitted that URL. The first execution task is theref
 - Lovable now returns `200` for the priority routes, including `/buy-construction-material`.
 - Lovable's sitemap now includes the buying page and material routes.
 - A Git-connected Vercel production fallback is live at `https://rodiwala.vercel.app`; it also returns `200` for the priority routes.
+- The Google Search Console HTML verification file is deployed at `https://rodiwala.vercel.app/googlee1858dd9e2bcdb57.html` and returns `200` with the exact token.
 - The canonical URLs and sitemap currently prefer `https://rodiwala.lovable.app`.
 - Google Search Console is not authenticated in the available browser session, so sitemap submission and URL Inspection remain owner-authorised actions.
 - Google Business Profile is not authenticated in the available browser session, and business facts such as service areas and hours still require owner confirmation.
