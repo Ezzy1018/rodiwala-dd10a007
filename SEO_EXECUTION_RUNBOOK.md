@@ -50,6 +50,16 @@ The code in GitHub `main` includes the new buying page, but the live Lovable dep
 
 The live sitemap previously omitted that URL. The first execution task is therefore to publish the current build and re-run the launch gate. Do not submit an incomplete sitemap to Google.
 
+### Execution status: 5 September 2026
+
+- GitHub `main` is synced and clean after the latest Lovable commits were merged safely.
+- Lovable now returns `200` for the priority routes, including `/buy-construction-material`.
+- Lovable's sitemap now includes the buying page and material routes.
+- A Git-connected Vercel production fallback is live at `https://rodiwala.vercel.app`; it also returns `200` for the priority routes.
+- The canonical URLs and sitemap currently prefer `https://rodiwala.lovable.app`.
+- Google Search Console is not authenticated in the available browser session, so sitemap submission and URL Inspection remain owner-authorised actions.
+- Google Business Profile is not authenticated in the available browser session, and business facts such as service areas and hours still require owner confirmation.
+
 ### Confirmed working facts currently safe to use
 
 - Brand: Rodiwala.
