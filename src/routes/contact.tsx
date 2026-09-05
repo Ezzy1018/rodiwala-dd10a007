@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ContentPage } from "@/components/content-page";
-import { phoneDisplay, phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
+import { phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
 import { ArrowRight, CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import heroImage from "@/assets/rodiwala-yard-hero.jpg";
 import { seoHead } from "@/lib/seo";
@@ -26,8 +26,8 @@ function Page() {
         <div className="contact-actions">
           <a href={`tel:${phoneHref}`}>
             <Phone />
-            <span>Call Rodiwala</span>
-            <strong>{phoneDisplay}</strong>
+            <span>Call us</span>
+            <strong>Tap to call</strong>
             <ArrowRight />
           </a>
           <a
@@ -65,7 +65,7 @@ function Page() {
             rel="noreferrer"
             className="btn-primary mt-7"
           >
-            Message on WhatsApp <ArrowRight size={17} />
+            Get a quote <ArrowRight size={17} />
           </a>
         </div>
       </div>

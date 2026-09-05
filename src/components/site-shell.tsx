@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, MessageCircle, Phone, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { Logo } from "./logo";
-import { phoneDisplay, phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
+import { phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
 
 const nav = [
   ["Buy materials", "/buy-construction-material"],
@@ -37,7 +37,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               className="hidden items-center gap-2 text-sm font-semibold text-primary sm:inline-flex"
             >
               <Phone size={16} />
-              {phoneDisplay}
+              Call us
             </a>
             <a
               href={quoteHref("Header")}
@@ -46,7 +46,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               className="btn-accent hidden sm:inline-flex"
             >
               <MessageCircle size={16} />
-              Get quote
+              Get a quote
             </a>
             <button
               className="icon-button lg:hidden"
@@ -96,7 +96,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-border bg-background p-2 pb-[calc(.5rem+env(safe-area-inset-bottom))] md:hidden">
         <a className="sticky-action" href={`tel:${phoneHref}`}>
           <Phone size={17} />
-          Call
+          Call us
         </a>
         <a
           className="sticky-action"
@@ -115,7 +115,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           target="_blank"
           rel="noreferrer"
         >
-          Get quote
+          Get a quote
         </a>
       </div>
     </div>
