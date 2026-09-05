@@ -1,8 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { CheckCircle2 } from "lucide-react";
 import { ContentPage, MaterialTile } from "@/components/content-page";
 import { StructuredData } from "@/components/structured-data";
-import { materials } from "@/lib/materials";
+import { materials, quoteHref } from "@/lib/materials";
 import { seoHead } from "@/lib/seo";
 
 const faqs = [
@@ -75,14 +75,40 @@ function Page() {
               <p className="eyebrow">Construction material catalogue</p>
               <h2 className="section-title">Choose a material to get a quote.</h2>
             </div>
-            <Link to="/materials" className="text-link">
-              View all materials <ArrowRight size={16} />
-            </Link>
           </div>
           <div className="catalogue-grid">
             {materials.map((material) => (
               <MaterialTile material={material} key={material.slug} />
             ))}
+          </div>
+        </section>
+
+        <section className="mt-20 grid gap-8 border-t border-border pt-12 md:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="eyebrow">Beyond the core range</p>
+            <h2 className="section-title">Need something else?</h2>
+          </div>
+          <div>
+            <p className="text-lg text-muted-foreground">
+              Cement, TMT steel, bricks, blocks, pavers, sand and other project materials can be
+              requested. Share the exact specification so source and delivery feasibility can be
+              checked.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              {["Cement", "TMT steel", "Bricks & blocks", "Pavers", "Other sand"].map((x) => (
+                <span className="request-chip" key={x}>
+                  {x}
+                </span>
+              ))}
+            </div>
+            <a
+              href={quoteHref("Other materials")}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary mt-8"
+            >
+              Send another requirement →
+            </a>
           </div>
         </section>
 
