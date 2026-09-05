@@ -71,7 +71,7 @@ function Index() {
               <p className="eyebrow">Material catalogue</p>
               <h2 className="section-title">Choose what your site needs.</h2>
             </div>
-            <Link to="/materials" className="text-link hidden sm:inline-flex">
+            <Link to="/buy-construction-material" className="text-link hidden sm:inline-flex">
               Explore the catalogue <ArrowRight size={16} />
             </Link>
           </div>
@@ -82,7 +82,7 @@ function Index() {
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
             Need cement, TMT steel, bricks, blocks, pavers or something else?{" "}
-            <Link to="/materials" className="font-semibold text-primary">
+            <Link to="/buy-construction-material" className="font-semibold text-primary">
               Send the requirement.
             </Link>
           </p>
