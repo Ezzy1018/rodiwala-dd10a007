@@ -1,5 +1,7 @@
 # Rodiwala search growth plan
 
+> Execution handoff: use [`SEO_EXECUTION_RUNBOOK.md`](./SEO_EXECUTION_RUNBOOK.md) as the operational source of truth. This file explains the strategy and rationale; the runbook contains the ordered tasks, validation gates and safe handoff prompt.
+
 ## TLDR
 
 The fastest realistic win is to own branded searches for `Rodiwala`, `Rodi Wala` and close spelling variants, then build authority for commercial searches such as `construction material supplier India`, `buy construction material`, `rodi supplier`, `stone dust supplier`, `M-sand supplier` and `RMC supplier`.
