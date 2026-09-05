@@ -31,7 +31,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
     {children}
      <footer className="border-t border-primary/15 bg-primary text-primary-foreground">
        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-12 sm:flex-row sm:items-end sm:justify-between">
-         <div className="footer-brand"><Logo/><p className="mt-3 max-w-md text-sm text-primary-foreground/65">Construction-material sourcing for Delhi NCR and Uttar Pradesh. Availability, delivered pricing and feasibility are confirmed for every requirement.</p></div>
+         <div className="footer-brand"><Logo/><p className="mt-3 max-w-md text-sm text-primary-foreground/65">Construction-material sourcing for sites across India. Availability, delivered pricing and delivery feasibility are confirmed for every requirement, wherever your site is.</p></div>
          <div className="flex gap-5 text-sm font-medium text-primary-foreground"><Link to="/contact">Contact</Link><a href={quoteHref("Footer")} target="_blank" rel="noreferrer">Get a quote</a></div>
       </div>
     </footer>

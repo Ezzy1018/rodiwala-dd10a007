@@ -78,13 +78,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Rodiwala — Construction Material Supply" },
-      { name: "description", content: "Request delivered pricing for aggregate, stone dust, M-sand and RMC in Delhi NCR and Uttar Pradesh." },
+      { title: "Rodiwala — Construction Material Supply Across India" },
+      { name: "description", content: "Rodiwala supplies aggregate (rodi), stone dust, M-sand and ready-mix concrete to construction sites across India. Send your requirement for delivered pricing." },
       { name: "google-site-verification", content: "rAQ-OmHAHp04oz5S15BPMEZ389WWLbTCvR0_AFSA7G4" },
       { name: "author", content: "Rodiwala" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Rodiwala" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Rodiwala",
+          url: "https://rodiwala.lovable.app",
+          description: "Construction material sourcing and delivery coordination for sites across India.",
+          areaServed: { "@type": "Country", name: "India" },
+          contactPoint: [{ "@type": "ContactPoint", telephone: "+91-9416165465", contactType: "sales", areaServed: "IN", availableLanguage: ["en", "hi"] }],
+        }),
+      },
+    ],
+
     links: [
       {
         rel: "stylesheet",
