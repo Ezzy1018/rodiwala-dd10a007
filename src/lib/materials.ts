@@ -29,7 +29,6 @@ export function getMaterial(slug: string) {
   return material;
 }
 
-export const phoneDisplay = "9416165465";
 export const phoneHref = "+919416165465";
 
 export function whatsappUrl(message: string) {
