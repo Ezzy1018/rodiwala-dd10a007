@@ -35,3 +35,10 @@ export const phoneHref = "+919416165465";
 export function whatsappUrl(message: string) {
   return `https://wa.me/919416165465?text=${encodeURIComponent(message)}`;
 }
+
+export const defaultQuoteMessage =
+  "Hi Rodiwala, I have a construction material requirement. Please help me with availability and delivered pricing.";
+
+export function quoteHref(context?: string) {
+  return whatsappUrl(context ? `${defaultQuoteMessage} (${context})` : defaultQuoteMessage);
+}

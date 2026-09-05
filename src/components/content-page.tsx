@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, MessageCircle, Phone } from "lucide-react";
-import { QuoteBuilder } from "./quote-builder";
-import { materials, phoneDisplay, phoneHref, type Material } from "@/lib/materials";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { QuoteButtons, QuoteCta } from "./quote-cta";
+import { materials, quoteHref, type Material } from "@/lib/materials";
 import logoMark from "@/assets/rodiwala-logo-mark.png";
 import heroImage from "@/assets/rodiwala-yard-hero.jpg";
 
 export function ContentPage({ eyebrow, title, intro, children, quoteMaterial, image = heroImage }: { eyebrow: string; title: string; intro: string; children: React.ReactNode; quoteMaterial?: string; image?: string }) {
-  return <main><section className="page-hero"><img src={image} alt="" className="page-hero-image"/><div className="page-hero-shade"/><img src={logoMark} alt="" className="brand-watermark"/><div className="page-hero-content"><p className="eyebrow text-accent">{eyebrow}</p><h1>{title}</h1><p>{intro}</p><div className="mt-7 flex flex-wrap gap-3"><Link to="/request-quote" className="btn-accent"><MessageCircle size={18}/>Get a quote</Link><a href={`tel:${phoneHref}`} className="btn-ghost-light"><Phone size={18}/>Call {phoneDisplay}</a></div></div></section><section className="content-band"><div className="mx-auto max-w-7xl px-5 lg:px-8">{children}</div></section>{quoteMaterial && <section className="bg-primary py-16"><div className="mx-auto max-w-7xl px-5 lg:px-8"><QuoteBuilder initialMaterial={quoteMaterial} source={title}/></div></section>}</main>;
+  return <main><section className="page-hero"><img src={image} alt="" className="page-hero-image"/><div className="page-hero-shade"/><img src={logoMark} alt="" className="brand-watermark"/><div className="page-hero-content"><p className="eyebrow text-accent">{eyebrow}</p><h1>{title}</h1><p>{intro}</p><div className="mt-7"><QuoteButtons context={title}/></div></div></section><section className="content-band"><div className="mx-auto max-w-7xl px-5 lg:px-8">{children}</div></section><QuoteCta context={quoteMaterial ?? title}/></main>;
 }
 
 export function MaterialPage({ material }: { material: Material }) {
@@ -17,5 +17,5 @@ export function MaterialPage({ material }: { material: Material }) {
 export function CardLink({ to, title, text }: { to: string; title: string; text: string }) { return <Link to={to} className="block rounded-2xl border border-border bg-card p-5 transition-colors hover:bg-secondary"><h3 className="font-display text-lg font-bold">{title}</h3><p className="mt-2 text-sm text-muted-foreground">{text}</p><span className="text-link mt-5">Open page <ArrowRight size={15}/></span></Link>; }
 
 export function MaterialTile({ material }: { material: Material }) {
-  return <article className="catalogue-tile"><img src={material.image} alt={`Illustrative ${material.name}`} width={800} height={680} loading="lazy"/><div className="catalogue-shade"/><div className="catalogue-copy"><p>Core material</p><h3>{material.shortName}</h3><span>{material.description}</span></div><Link to={material.href} className="catalogue-action" aria-label={`View and quote ${material.name}`}>Get a quote <ArrowRight size={17}/></Link></article>;
+  return <article className="catalogue-tile"><img src={material.image} alt={`Illustrative ${material.name}`} width={800} height={680} loading="lazy"/><div className="catalogue-shade"/><div className="catalogue-copy"><p>Core material</p><h3>{material.shortName}</h3><span>{material.description}</span></div><div className="catalogue-actions"><a href={quoteHref(material.name)} target="_blank" rel="noreferrer" className="catalogue-action" aria-label={`Get a quote for ${material.name} on WhatsApp`}>Get a quote <ArrowRight size={17}/></a><Link to={material.href} className="catalogue-link">Details</Link></div></article>;
 }
