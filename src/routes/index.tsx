@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
     seoHead({
       title: "Construction Material Supplier in India | Rodiwala",
       description:
-        "Rodiwala supplies 10 mm and 20 mm aggregate (rodi), stone dust, M-sand and ready-mix concrete to sites across India. Send your requirement for delivered pricing.",
+        "Construction material chahiye? 10 mm aur 20 mm rodi, stone dust, M-sand aur ready-mix concrete (RMC) ke liye quantity, site aur date bhejo — delivered rate bata denge.",
       path: "/",
     }),
   component: Index,

@@ -25,7 +25,7 @@ export const Route = createFileRoute("/buy-construction-material")({
     seoHead({
       title: "Buy Construction Material in India | Rodiwala",
       description:
-        "Buy or source aggregate, stone dust, M-sand, RMC and other construction materials across India. Send Rodiwala your requirement for a delivered quote.",
+        "Construction material khareedna hai? Aggregate (rodi), stone dust, M-sand, RMC ya koi aur samaan — requirement bhejo aur delivered quote lo. India bhar se enquiry.",
       path: "/buy-construction-material",
     }),
   component: Page,

@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
     seoHead({
       title: "Contact Rodiwala for Construction Materials",
       description:
-        "Call or WhatsApp Rodiwala from anywhere in India with your construction material requirement.",
+        "Construction material chahiye? Rodiwala ko WhatsApp par material, quantity, location aur date bhejo, ya call karke poochho. India bhar se enquiry.",
       path: "/contact",
     }),
   component: Page,

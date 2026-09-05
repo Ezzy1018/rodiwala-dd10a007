@@ -8,7 +8,7 @@ export const Route = createFileRoute("/delivery-areas")({
     seoHead({
       title: "Construction Material Delivery Across India | Rodiwala",
       description:
-        "Check construction material delivery feasibility for your site anywhere in India. Share your city, locality or pin code for a route and freight check.",
+        "Aapki site tak construction material delivery possible hai? City, locality ya pin code bhejo — route, vehicle access aur freight check karke bata denge.",
       path: "/delivery-areas",
     }),
   component: Page,
