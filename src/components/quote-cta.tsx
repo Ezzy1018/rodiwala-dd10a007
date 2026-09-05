@@ -1,10 +1,10 @@
 import { MessageCircle, Phone } from "lucide-react";
-import { phoneDisplay, phoneHref, quoteHref } from "@/lib/materials";
+import { phoneHref, quoteHref } from "@/lib/materials";
 
 export function QuoteButtons({ context, tone = "dark" }: { context?: string | undefined; tone?: "dark" | "light" }) {
   return <div className="flex flex-wrap gap-3">
-    <a href={quoteHref(context)} target="_blank" rel="noreferrer" className={tone === "dark" ? "btn-accent" : "btn-primary"}><MessageCircle size={18}/>Get a quote on WhatsApp</a>
-    <a href={`tel:${phoneHref}`} className={tone === "dark" ? "btn-ghost-light" : "btn-outline border-primary/30"}><Phone size={18}/>Call {phoneDisplay}</a>
+    <a href={quoteHref(context)} target="_blank" rel="noreferrer" className={tone === "dark" ? "btn-accent" : "btn-primary"}><MessageCircle size={18}/>Get a quote</a>
+    <a href={`tel:${phoneHref}`} className={tone === "dark" ? "btn-ghost-light" : "btn-outline border-primary/30"}><Phone size={18}/>Call us</a>
   </div>;
 }
 
