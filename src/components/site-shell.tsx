@@ -5,10 +5,10 @@ import { Logo } from "./logo";
 import { phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
 
 const nav = [
-  ["Buy materials", "/buy-construction-material"],
-  ["Delivery check", "/delivery-areas"],
-  ["Kaise hota hai", "/how-it-works"],
-  ["Rodiwala ke baare mein", "/about"],
+  ["Buy Materials", "/buy-construction-material"],
+  ["Delivery", "/delivery-areas"],
+  ["How It Works", "/how-it-works"],
+  ["About", "/about"],
 ] as const;
 
 export function SiteShell({ children }: { children: ReactNode }) {
@@ -36,7 +36,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               className="hidden items-center gap-2 text-sm font-semibold text-primary sm:inline-flex"
             >
               <Phone size={16} />
-              Call karke poochho
+              Call now
             </a>
             <a
               href={quoteHref("Header")}
@@ -45,7 +45,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               className="btn-accent hidden sm:inline-flex"
             >
               <MessageCircle size={16} />
-              WhatsApp par quote lo
+              Get quote
             </a>
             <button
               className="icon-button lg:hidden"
@@ -87,7 +87,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div className="flex gap-5 text-sm font-medium text-primary-foreground">
             <Link to="/contact">Contact</Link>
             <a href={quoteHref("Footer")} target="_blank" rel="noreferrer">
-              WhatsApp par quote lo
+              Get quote
             </a>
           </div>
         </div>
@@ -95,7 +95,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-border bg-background p-2 pb-[calc(.5rem+env(safe-area-inset-bottom))] md:hidden">
         <a className="sticky-action" href={`tel:${phoneHref}`}>
           <Phone size={17} />
-          Call karke poochho
+          Call now
         </a>
         <a
           className="sticky-action"
@@ -106,7 +106,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           rel="noreferrer"
         >
           <MessageCircle size={17} />
-          WhatsApp par bhejo
+          WhatsApp
         </a>
         <a
           className="sticky-action bg-accent text-accent-foreground"
@@ -114,7 +114,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           target="_blank"
           rel="noreferrer"
         >
-          Quote lo
+          Get quote
         </a>
       </div>
     </div>

@@ -17,14 +17,14 @@ export function QuoteButtons({
         className={tone === "dark" ? "btn-accent" : "btn-primary"}
       >
         <MessageCircle size={18} />
-        WhatsApp par quote lo
+        Get quote
       </a>
       <a
         href={`tel:${phoneHref}`}
         className={tone === "dark" ? "btn-ghost-light" : "btn-outline border-primary/30"}
       >
         <Phone size={18} />
-        Call karke poochho
+        Call now
       </a>
     </div>
   );
@@ -35,11 +35,10 @@ export function QuoteCta({ context }: { context?: string | undefined }) {
     <section className="bg-accent py-16 text-center">
       <div className="mx-auto max-w-3xl px-5">
         <h2 className="font-display text-4xl font-bold text-accent-foreground">
-          Site ke liye material chahiye?
+          Material chahiye?
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-accent-foreground/80">
-          Material, quantity, location aur date WhatsApp par bhejo. Rodiwala availability aur
-          delivered rate check karke batayega.
+          Requirement WhatsApp karo. Availability aur delivered rate mil jayega.
         </p>
         <div className="mt-7 flex justify-center">
           <QuoteButtons context={context} tone="light" />

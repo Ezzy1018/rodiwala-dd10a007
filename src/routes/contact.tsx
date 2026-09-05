@@ -18,16 +18,16 @@ function Page() {
   return (
     <ContentPage
       eyebrow="Contact Rodiwala"
-      title="Site par kya chahiye? WhatsApp par requirement bhejo."
-      intro="Material, quantity, delivery city ya pin code aur required date bhejo, taaki useful response mil sake."
+      title="Baat karein. Quote lein."
+      intro="Material, quantity, location aur date bhejo. Hum clear response denge."
       image={heroImage}
     >
       <div className="contact-layout">
         <div className="contact-actions">
           <a href={`tel:${phoneHref}`}>
             <Phone />
-            <span>Phone par baat karo</span>
-            <strong>Call karke poochho</strong>
+            <span>Phone</span>
+            <strong>Call now</strong>
             <ArrowRight />
           </a>
           <a
@@ -39,13 +39,13 @@ function Page() {
           >
             <MessageCircle />
             <span>WhatsApp</span>
-            <strong>Requirement bhejo</strong>
+            <strong>Get quote</strong>
             <ArrowRight />
           </a>
         </div>
         <div className="contact-checklist">
-          <p className="eyebrow">Contact karne se pehle</p>
-          <h2 className="section-title">Ye chaar details bhejoge to baat fast hogi.</h2>
+          <p className="eyebrow">Quick checklist</p>
+          <h2 className="section-title">Ye chaar details bhejo.</h2>
           <ul>
             {[
               "Material aur size ya grade",
@@ -65,7 +65,7 @@ function Page() {
             rel="noreferrer"
             className="btn-primary mt-7"
           >
-            WhatsApp par quote lo <ArrowRight size={17} />
+            Get quote <ArrowRight size={17} />
           </a>
         </div>
       </div>

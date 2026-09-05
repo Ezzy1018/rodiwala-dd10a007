@@ -36,14 +36,14 @@ function Page() {
     <>
       <ContentPage
         eyebrow="Buy construction material"
-        title="Construction material khareedna hai? Pehle requirement bhejo."
-        intro="Rodiwala par material, quantity, location aur date bhejo. Availability, route, freight aur site access check karke delivered quote confirm kiya jata hai."
+        title="Material choose karo. Quote lo."
+        intro="Material, quantity, location aur date bhejo. Hum availability, freight aur delivery check karenge."
         quoteMaterial="Buy construction material"
       >
         <section className="detail-grid">
           <div>
             <p className="eyebrow">Kya mangwa sakte ho</p>
-            <h2 className="section-title">Site ke kaam ke liye material source karo.</h2>
+             <h2 className="section-title">Site material, ek jagah.</h2>
             <p className="mt-4 max-w-xl text-lg text-muted-foreground">
               Jahan zaroori ho wahan size, grade ya specification bhi share karo. Team source
               availability, delivery distance aur site access check karke quote confirm karegi.
@@ -51,7 +51,7 @@ function Page() {
           </div>
           <div className="checklist-panel">
             <p className="eyebrow text-accent">Ye details bhejo</p>
-            <h2>First message complete bhejo.</h2>
+             <h2>Ek message. Chaar details.</h2>
             <ul>
               {[
                 "Material aur size ya grade",
@@ -105,7 +105,7 @@ function Page() {
               rel="noreferrer"
               className="btn-primary mt-8"
             >
-              Doosri requirement bhejo →
+               Ask us →
             </a>
           </div>
         </section>
@@ -136,7 +136,7 @@ function Page() {
 
         <section className="mt-20 bg-secondary p-7 md:p-10">
           <p className="eyebrow">Buying ka practical answer</p>
-          <h2 className="section-title">Site ke hisaab se quote, fake “buy now” promise nahi.</h2>
+          <h2 className="section-title">Real quote. No guesswork.</h2>
           <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
             Rodiwala universal prices ya har material ka always-in-stock promise nahi karta.
             Delivered quote exact requirement par depend karta hai. Isliye complete WhatsApp message
