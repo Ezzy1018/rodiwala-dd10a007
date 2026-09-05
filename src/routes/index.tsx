@@ -36,13 +36,12 @@ function Index() {
         <div className="home-hero-content">
           <p className="eyebrow text-accent">
             <span className="status-dot" />
-            Rodi, M-sand aur RMC ke liye seedha quote
+            Construction material, direct quote
           </p>
           <h1>Construction material chahiye? Rodiwala se mangwao.</h1>
           <p>
-            10 mm aur 20 mm rodi, stone dust, M-sand ya RMC ke liye apni quantity, site location aur
-            required date WhatsApp par bhejo. Availability, freight aur delivered rate check karke
-            batayenge.
+            Material, quantity, location aur date WhatsApp karo. Availability aur delivered rate
+            check karke batayenge.
           </p>
           <div className="mt-8">
             <QuoteButtons context="Homepage hero" />
@@ -69,10 +68,10 @@ function Index() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Material catalogue</p>
-              <h2 className="section-title">Site ke liye kaunsa material chahiye?</h2>
+              <h2 className="section-title">Aapko kya chahiye?</h2>
             </div>
             <Link to="/buy-construction-material" className="text-link hidden sm:inline-flex">
-              Catalogue dekho <ArrowRight size={16} />
+              View all <ArrowRight size={16} />
             </Link>
           </div>
           <div className="catalogue-grid">
@@ -83,7 +82,7 @@ function Index() {
           <p className="mt-6 text-sm text-muted-foreground">
             TMT steel, bricks, blocks, pavers ya koi aur samaan chahiye?{" "}
             <Link to="/buy-construction-material" className="font-semibold text-primary">
-              Requirement bhejo.
+               Ask us.
             </Link>
           </p>
         </div>
@@ -93,17 +92,15 @@ function Index() {
         <div className="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-[.8fr_1.2fr] lg:px-8">
           <div>
             <p className="eyebrow">Sahi supplier dhoondo</p>
-            <h2 className="section-title">Site ke hisaab se quote, checkout guesswork nahi.</h2>
+            <h2 className="section-title">Site-specific quote. No guesswork.</h2>
           </div>
           <div>
             <p className="text-lg text-muted-foreground">
-              Rodiwala ko log kabhi-kabhi Rodi Wala ya Roadi Wala bhi search karte hain.
-              Construction material chahiye to material, quantity, delivery location aur required
-              date bhejo. Ek person availability, freight aur site feasibility check karke quote
-              confirm karta hai.
+              Material, quantity, location aur date bhejo. Hum availability, freight aur site
+              feasibility check karke quote confirm karenge.
             </p>
             <Link to="/buy-construction-material" className="btn-outline mt-7">
-              Material kaise mangwana hai <ArrowRight size={17} />
+              Browse materials <ArrowRight size={17} />
             </Link>
           </div>
         </div>
@@ -112,11 +109,11 @@ function Index() {
       <section className="content-band bg-secondary">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <p className="eyebrow">Kaise kaam hota hai</p>
-          <h2 className="section-title max-w-2xl">Requirement se coordinated delivery tak.</h2>
+          <h2 className="section-title max-w-2xl">Message se delivery tak.</h2>
           <ProcessShowcase />
           <div className="mt-8">
             <Link to="/how-it-works" className="btn-outline">
-              Pura process dekho <ArrowRight size={17} />
+              See process <ArrowRight size={17} />
             </Link>
           </div>
         </div>
@@ -126,11 +123,10 @@ function Index() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-[.85fr_1.15fr] lg:px-8">
           <div>
             <p className="eyebrow">Delivery check</p>
-            <h2 className="section-title">Aapki location se quote decide hota hai.</h2>
+            <h2 className="section-title">Location bhejo. Route check karo.</h2>
             <p className="mt-4 max-w-lg text-lg text-muted-foreground">
-              Rodiwala India bhar ki sites se requirements leta hai. Feasibility nearest source,
-              load, route aur site access par depend karti hai. Exact city, locality ya pin code
-              bhejo, route check kar denge.
+              India bhar se enquiries welcome hain. Exact city ya pin code bhejo; source, freight
+              aur site access check kar denge.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-foreground">
               {[
@@ -145,7 +141,7 @@ function Index() {
               ))}
             </ul>
             <Link to="/delivery-areas" className="btn-outline mt-7">
-              Delivery ke factors dekho <ArrowRight size={17} />
+              Check delivery <ArrowRight size={17} />
             </Link>
           </div>
           <div className="image-frame">
@@ -165,12 +161,11 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <p className="eyebrow">Rodiwala ka promise</p>
           <h2 className="section-title max-w-3xl">
-            Material, quantity, site aur required date bhejo.
+             Clear details. Clear quote.
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-            Rodiwala availability, delivered rate aur delivery feasibility check karke batayega.
-            Real delivery photos, business details aur verified reviews approval ke baad hi add
-            honge.
+            Material, quantity, location aur date bhejo. Hum availability, delivered rate aur
+            delivery feasibility check karenge.
           </p>
         </div>
       </section>
@@ -178,7 +173,7 @@ function Index() {
       <section id="faq" className="bg-background py-14">
         <div className="mx-auto max-w-3xl px-5">
           <p className="eyebrow">Practical questions</p>
-          <h2 className="section-title">Enquiry bhejne se pehle ye jaan lo.</h2>
+          <h2 className="section-title">Quick answers.</h2>
           <div className="faq-list">
             {[
               [
