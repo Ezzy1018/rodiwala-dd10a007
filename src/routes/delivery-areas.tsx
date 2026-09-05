@@ -1,3 +1,76 @@
-import { createFileRoute } from "@tanstack/react-router"; import { ContentPage } from "@/components/content-page"; import { CheckCircle2, MapPin, Route as RouteIcon, Truck } from "lucide-react"; import deliveryImage from "@/assets/delivery-yard.jpg";
-export const Route=createFileRoute("/delivery-areas")({head:()=>({meta:[{title:"Construction Material Delivery Areas | Rodiwala"},{name:"description",content:"Check construction material delivery feasibility across Delhi NCR and Uttar Pradesh."},{property:"og:title",content:"Construction Material Delivery Areas | Rodiwala"},{property:"og:description",content:"Share your locality or pin code to confirm delivery feasibility and freight."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:Page});
-function Page(){const factors=[{Icon:MapPin,title:"Exact location",text:"Share the locality or pin code so route and source distance can be reviewed."},{Icon:Truck,title:"Load and vehicle",text:"Material type, quantity and unit influence the practical vehicle option."},{Icon:RouteIcon,title:"Site access",text:"Road width, entry restrictions and unloading notes help avoid a failed dispatch."}];return <ContentPage eyebrow="Delivery coverage" title="Tell us the site. We’ll check the route." intro="Rodiwala accepts enquiries across Delhi NCR and Uttar Pradesh. Every delivery is checked against the actual load, route and access." quoteMaterial="Other material" image={deliveryImage}><div className="factor-grid">{factors.map(({Icon,title,text})=><article className="factor-card" key={title}><Icon/><h2>{title}</h2><p>{text}</p></article>)}</div><section className="mt-20 grid gap-10 bg-secondary p-7 md:grid-cols-2 md:p-10"><div><p className="eyebrow">What gets confirmed</p><h2 className="section-title">A delivery plan, not a blanket promise.</h2><p className="mt-4 text-muted-foreground">Timing and freight depend on source, distance, quantity, vehicle and site access. They are confirmed with the quote.</p></div><ul className="space-y-4">{["Whether the requested material is available","Whether the load and vehicle suit the route","Whether freight is included or separate","Expected timing before dispatch"].map(item=><li className="flex gap-3" key={item}><CheckCircle2 className="shrink-0 text-primary"/>{item}</li>)}</ul></section></ContentPage>}
+import { createFileRoute } from "@tanstack/react-router";
+import { ContentPage } from "@/components/content-page";
+import { CheckCircle2, MapPin, Route as RouteIcon, Truck } from "lucide-react";
+import deliveryImage from "@/assets/delivery-yard.jpg";
+import { seoHead } from "@/lib/seo";
+export const Route = createFileRoute("/delivery-areas")({
+  head: () =>
+    seoHead({
+      title: "Construction Material Delivery in Delhi NCR & UP | Rodiwala",
+      description:
+        "Check construction material delivery feasibility across Delhi NCR and Uttar Pradesh. Share your locality or pin code for a route and freight check.",
+      path: "/delivery-areas",
+    }),
+  component: Page,
+});
+function Page() {
+  const factors = [
+    {
+      Icon: MapPin,
+      title: "Exact location",
+      text: "Share the locality or pin code so route and source distance can be reviewed.",
+    },
+    {
+      Icon: Truck,
+      title: "Load and vehicle",
+      text: "Material type, quantity and unit influence the practical vehicle option.",
+    },
+    {
+      Icon: RouteIcon,
+      title: "Site access",
+      text: "Road width, entry restrictions and unloading notes help avoid a failed dispatch.",
+    },
+  ];
+  return (
+    <ContentPage
+      eyebrow="Delivery coverage"
+      title="Tell us the site. We’ll check the route."
+      intro="Rodiwala accepts enquiries across Delhi NCR and Uttar Pradesh. Every delivery is checked against the actual load, route and access."
+      quoteMaterial="Other material"
+      image={deliveryImage}
+    >
+      <div className="factor-grid">
+        {factors.map(({ Icon, title, text }) => (
+          <article className="factor-card" key={title}>
+            <Icon />
+            <h2>{title}</h2>
+            <p>{text}</p>
+          </article>
+        ))}
+      </div>
+      <section className="mt-20 grid gap-10 bg-secondary p-7 md:grid-cols-2 md:p-10">
+        <div>
+          <p className="eyebrow">What gets confirmed</p>
+          <h2 className="section-title">A delivery plan, not a blanket promise.</h2>
+          <p className="mt-4 text-muted-foreground">
+            Timing and freight depend on source, distance, quantity, vehicle and site access. They
+            are confirmed with the quote.
+          </p>
+        </div>
+        <ul className="space-y-4">
+          {[
+            "Whether the requested material is available",
+            "Whether the load and vehicle suit the route",
+            "Whether freight is included or separate",
+            "Expected timing before dispatch",
+          ].map((item) => (
+            <li className="flex gap-3" key={item}>
+              <CheckCircle2 className="shrink-0 text-primary" />
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </ContentPage>
+  );
+}

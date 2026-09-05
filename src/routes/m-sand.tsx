@@ -1,2 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router"; import { MaterialPage } from "@/components/content-page"; import { getMaterial } from "@/lib/materials";
-export const Route=createFileRoute("/m-sand")({head:()=>({meta:[{title:"M-Sand Supplier | Rodiwala"},{name:"description",content:"Request delivered pricing for M-sand or crushed sand."},{property:"og:title",content:"M-Sand Supplier | Rodiwala"},{property:"og:description",content:"Request delivered pricing for M-sand or crushed sand."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:()=> <MaterialPage material={getMaterial("m-sand")}/>});
+import { createFileRoute } from "@tanstack/react-router";
+import { MaterialPage } from "@/components/content-page";
+import { getMaterial } from "@/lib/materials";
+import { seoHead } from "@/lib/seo";
+export const Route = createFileRoute("/m-sand")({
+  head: () =>
+    seoHead({
+      title: "M-Sand Supplier in Delhi NCR | Rodiwala",
+      description:
+        "Request delivered pricing for M-sand or crushed sand for construction sites across Delhi NCR and Uttar Pradesh.",
+      path: "/m-sand",
+    }),
+  component: () => <MaterialPage material={getMaterial("m-sand")} />,
+});

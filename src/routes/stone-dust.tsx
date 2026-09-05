@@ -1,2 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router"; import { MaterialPage } from "@/components/content-page"; import { getMaterial } from "@/lib/materials";
-export const Route=createFileRoute("/stone-dust")({head:()=>({meta:[{title:"Stone Dust Supplier | Rodiwala"},{name:"description",content:"Request delivered pricing for stone dust."},{property:"og:title",content:"Stone Dust Supplier | Rodiwala"},{property:"og:description",content:"Request delivered pricing for stone dust."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:()=> <MaterialPage material={getMaterial("stone-dust")}/>});
+import { createFileRoute } from "@tanstack/react-router";
+import { MaterialPage } from "@/components/content-page";
+import { getMaterial } from "@/lib/materials";
+import { seoHead } from "@/lib/seo";
+export const Route = createFileRoute("/stone-dust")({
+  head: () =>
+    seoHead({
+      title: "Stone Dust Supplier in Delhi NCR | Rodiwala",
+      description:
+        "Request delivered pricing for stone dust for filling, levelling, paver bedding and site work.",
+      path: "/stone-dust",
+    }),
+  component: () => <MaterialPage material={getMaterial("stone-dust")} />,
+});

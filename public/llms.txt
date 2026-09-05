@@ -1,0 +1,25 @@
+# Rodiwala (also written Rodi Wala or Roadi Wala)
+
+> Rodiwala helps contractors, builders, site engineers and homeowners source construction materials and coordinate delivery across Delhi NCR and Uttar Pradesh.
+
+Rodiwala is a quote-led construction material sourcing service. It does not claim fixed prices, universal stock or blanket delivery coverage. Availability, delivered pricing and feasibility are confirmed against the material, quantity, site, route and required date.
+
+## Core materials
+
+- [Construction materials catalogue](https://rodiwala.lovable.app/materials): 10 mm aggregate (rodi), 20 mm aggregate (rodi), stone dust, M-sand / crushed sand, and ready-mix concrete (RMC).
+- [Buy construction material](https://rodiwala.lovable.app/buy-construction-material): how to send a complete requirement and receive a quote.
+- [10 mm aggregate](https://rodiwala.lovable.app/aggregate/10-mm-rodi)
+- [20 mm aggregate](https://rodiwala.lovable.app/aggregate/20-mm-rodi)
+- [Stone dust](https://rodiwala.lovable.app/stone-dust)
+- [M-sand / crushed sand](https://rodiwala.lovable.app/m-sand)
+- [Ready-mix concrete](https://rodiwala.lovable.app/ready-mix-concrete)
+
+## Delivery and contact
+
+- [Delivery areas and feasibility](https://rodiwala.lovable.app/delivery-areas)
+- [How the quote process works](https://rodiwala.lovable.app/how-it-works)
+- [Contact Rodiwala](https://rodiwala.lovable.app/contact): call +91 94161 65465 or send a requirement on WhatsApp.
+
+## Useful requirement details
+
+Include the material and size or grade, quantity and unit, delivery locality or pin code, required date, and vehicle access or unloading notes.

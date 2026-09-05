@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteShell } from "../components/site-shell";
+import { SiteStructuredData } from "../components/structured-data";
 
 function NotFoundComponent() {
   return (
@@ -78,10 +79,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Rodiwala — Construction Material Supply" },
-      { name: "description", content: "Request delivered pricing for aggregate, stone dust, M-sand and RMC in Delhi NCR and Uttar Pradesh." },
+      { title: "Buy Construction Materials in Delhi NCR | Rodiwala" },
+      {
+        name: "description",
+        content:
+          "Buy or source aggregate, stone dust, M-sand and RMC across Delhi NCR and Uttar Pradesh. Share your requirement with Rodiwala for a delivered quote.",
+      },
       { name: "author", content: "Rodiwala" },
+      { name: "robots", content: "index,follow,max-image-preview:large" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Rodiwala" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -91,7 +98,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
+      },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
@@ -120,7 +130,10 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteShell><Outlet /></SiteShell>
+      <SiteShell>
+        <SiteStructuredData />
+        <Outlet />
+      </SiteShell>
     </QueryClientProvider>
   );
 }

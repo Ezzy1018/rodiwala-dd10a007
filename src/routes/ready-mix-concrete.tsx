@@ -1,2 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router"; import { MaterialPage } from "@/components/content-page"; import { getMaterial } from "@/lib/materials";
-export const Route=createFileRoute("/ready-mix-concrete")({head:()=>({meta:[{title:"Ready-Mix Concrete Quote | Rodiwala"},{name:"description",content:"Request an RMC quote with grade, volume, pump need, site and pour date."},{property:"og:title",content:"Ready-Mix Concrete Quote | Rodiwala"},{property:"og:description",content:"Request an RMC quote with grade, volume, pump need, site and pour date."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:()=> <MaterialPage material={getMaterial("ready-mix-concrete")}/>});
+import { createFileRoute } from "@tanstack/react-router";
+import { MaterialPage } from "@/components/content-page";
+import { getMaterial } from "@/lib/materials";
+import { seoHead } from "@/lib/seo";
+export const Route = createFileRoute("/ready-mix-concrete")({
+  head: () =>
+    seoHead({
+      title: "Ready-Mix Concrete Supplier in Delhi NCR | Rodiwala",
+      description:
+        "Request an RMC quote with grade, volume, pump need, site and pour date across Delhi NCR and Uttar Pradesh.",
+      path: "/ready-mix-concrete",
+    }),
+  component: () => <MaterialPage material={getMaterial("ready-mix-concrete")} />,
+});

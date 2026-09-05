@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AggregateRouteImport } from './routes/aggregate'
+import { Route as BuyConstructionMaterialRouteImport } from './routes/buy-construction-material'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DeliveryAreasRouteImport } from './routes/delivery-areas'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
@@ -37,6 +38,11 @@ const AboutRoute = AboutRouteImport.update({
 const AggregateRoute = AggregateRouteImport.update({
   id: '/aggregate',
   path: '/aggregate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuyConstructionMaterialRoute = BuyConstructionMaterialRouteImport.update({
+  id: '/buy-construction-material',
+  path: '/buy-construction-material',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -99,6 +105,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/aggregate': typeof AggregateRouteWithChildren
+  '/buy-construction-material': typeof BuyConstructionMaterialRoute
   '/contact': typeof ContactRoute
   '/delivery-areas': typeof DeliveryAreasRoute
   '/how-it-works': typeof HowItWorksRoute
@@ -114,6 +121,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/buy-construction-material': typeof BuyConstructionMaterialRoute
   '/contact': typeof ContactRoute
   '/delivery-areas': typeof DeliveryAreasRoute
   '/how-it-works': typeof HowItWorksRoute
@@ -131,6 +139,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/aggregate': typeof AggregateRouteWithChildren
+  '/buy-construction-material': typeof BuyConstructionMaterialRoute
   '/contact': typeof ContactRoute
   '/delivery-areas': typeof DeliveryAreasRoute
   '/how-it-works': typeof HowItWorksRoute
@@ -149,6 +158,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/aggregate'
+    | '/buy-construction-material'
     | '/contact'
     | '/delivery-areas'
     | '/how-it-works'
@@ -164,6 +174,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/buy-construction-material'
     | '/contact'
     | '/delivery-areas'
     | '/how-it-works'
@@ -180,6 +191,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/aggregate'
+    | '/buy-construction-material'
     | '/contact'
     | '/delivery-areas'
     | '/how-it-works'
@@ -197,6 +209,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AggregateRoute: typeof AggregateRouteWithChildren
+  BuyConstructionMaterialRoute: typeof BuyConstructionMaterialRoute
   ContactRoute: typeof ContactRoute
   DeliveryAreasRoute: typeof DeliveryAreasRoute
   HowItWorksRoute: typeof HowItWorksRoute
@@ -228,6 +241,13 @@ declare module '@tanstack/react-router' {
       path: '/aggregate'
       fullPath: '/aggregate'
       preLoaderRoute: typeof AggregateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buy-construction-material': {
+      id: '/buy-construction-material'
+      path: '/buy-construction-material'
+      fullPath: '/buy-construction-material'
+      preLoaderRoute: typeof BuyConstructionMaterialRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -330,6 +350,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AggregateRoute: AggregateRouteWithChildren,
+  BuyConstructionMaterialRoute: BuyConstructionMaterialRoute,
   ContactRoute: ContactRoute,
   DeliveryAreasRoute: DeliveryAreasRoute,
   HowItWorksRoute: HowItWorksRoute,
