@@ -79,18 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Construction Material Supplier in India | Rodiwala" },
-      {
-        name: "description",
-        content:
-          "Rodiwala supplies aggregate (rodi), stone dust, M-sand and ready-mix concrete to construction sites across India. Share your requirement for delivered pricing.",
-      },
       { name: "google-site-verification", content: "rAQ-OmHAHp04oz5S15BPMEZ389WWLbTCvR0_AFSA7G4" },
-      { name: "author", content: "Rodiwala" },
-      { name: "robots", content: "index,follow,max-image-preview:large" },
-      { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Rodiwala" },
-      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
