@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
     seoHead({
       title: "Contact Rodiwala for Construction Materials",
       description:
-        "Call or WhatsApp Rodiwala from anywhere in India with your construction material requirement.",
+        "Construction material requirement ke liye Rodiwala ko call ya WhatsApp karo. Material, quantity, location aur date bhejo.",
       path: "/contact",
     }),
   component: Page,
@@ -17,41 +17,41 @@ export const Route = createFileRoute("/contact")({
 function Page() {
   return (
     <ContentPage
-      eyebrow="Contact"
-      title="Talk to Rodiwala about your site requirement."
-      intro="Share the material, quantity, delivery location anywhere in India and required date for the most useful response."
+      eyebrow="Contact Rodiwala"
+      title="Site par kya chahiye? WhatsApp par requirement bhejo."
+      intro="Material, quantity, delivery city ya pin code aur required date bhejo, taaki useful response mil sake."
       image={heroImage}
     >
       <div className="contact-layout">
         <div className="contact-actions">
           <a href={`tel:${phoneHref}`}>
             <Phone />
-            <span>Call us</span>
-            <strong>Tap to call</strong>
+            <span>Phone par baat karo</span>
+            <strong>Call karke poochho</strong>
             <ArrowRight />
           </a>
           <a
             href={whatsappUrl(
-              "Hi Rodiwala, I have a construction material requirement. Material: [please add]. Quantity: [please add]. Delivery location: [please add]. Required by: [please add]. Please confirm availability and delivered price.",
+              "Namaste Rodiwala, meri site ke liye material chahiye. Material: [naam]. Quantity: [quantity aur unit]. Location/pin code: [location]. Required date: [date]. Site access ya unloading note: [details]. Availability aur delivered rate bata dijiye.",
             )}
             target="_blank"
             rel="noreferrer"
           >
             <MessageCircle />
             <span>WhatsApp</span>
-            <strong>Send a requirement</strong>
+            <strong>Requirement bhejo</strong>
             <ArrowRight />
           </a>
         </div>
         <div className="contact-checklist">
-          <p className="eyebrow">Before you contact us</p>
-          <h2 className="section-title">Four details make the conversation faster.</h2>
+          <p className="eyebrow">Contact karne se pehle</p>
+          <h2 className="section-title">Ye chaar details bhejoge to baat fast hogi.</h2>
           <ul>
             {[
-              "Material and size or grade",
-              "Quantity and unit",
-              "Delivery city, locality or pin code",
-              "Required date and access notes",
+              "Material aur size ya grade",
+              "Quantity aur unit",
+              "Delivery city, locality ya pin code",
+              "Required date aur access notes",
             ].map((item) => (
               <li key={item}>
                 <CheckCircle2 />
@@ -65,13 +65,13 @@ function Page() {
             rel="noreferrer"
             className="btn-primary mt-7"
           >
-            Get a quote <ArrowRight size={17} />
+            WhatsApp par quote lo <ArrowRight size={17} />
           </a>
         </div>
       </div>
       <p className="mt-10 text-sm text-muted-foreground">
-        Business hours and a public address have not yet been provided, so they are intentionally
-        omitted.
+        Business hours aur public address abhi provide nahi kiye gaye hain, isliye intentionally
+        omit kiye gaye hain.
       </p>
     </ContentPage>
   );

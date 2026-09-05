@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
     seoHead({
       title: "About Rodiwala Construction Material Supply",
       description:
-        "Rodiwala helps contractors, builders, site engineers and homeowners across India source construction materials and coordinate delivery.",
+        "Rodiwala contractors, builders, site engineers aur homeowners ko construction materials source karne aur delivery coordinate karne mein help karta hai.",
       path: "/about",
     }),
   component: Page,
@@ -18,34 +18,35 @@ function Page() {
     {
       Icon: HardHat,
       title: "Contractors",
-      text: "Bulk or recurring requirements with delivery coordination.",
+      text: "Bulk ya recurring requirements ke liye delivery coordination.",
     },
     {
       Icon: Ruler,
       title: "Site engineers",
-      text: "Specification-led enquiries with clear material and access details.",
+      text: "Clear material specification aur access details ke saath enquiry.",
     },
     {
       Icon: House,
       title: "Homeowners",
-      text: "Straightforward help turning a site requirement into a quote request.",
+      text: "Site requirement ko simple quote request mein badalne mein help.",
     },
   ];
   return (
     <ContentPage
-      eyebrow="About Rodiwala"
-      title="Built around a clearer material enquiry."
-      intro="Rodiwala helps contractors, site engineers, builders and homeowners across India source construction materials and coordinate delivery."
+      eyebrow="Rodiwala ke baare mein"
+      title="Rodiwala site ke material ko simple banata hai."
+      intro="Thekedar, builders, site engineers, site supervisors aur homeowners material requirement bhejkar quote le sakte hain."
       image={heroImage}
     >
       <section className="about-intro">
         <div>
-          <p className="eyebrow">What we do</p>
-          <h2 className="section-title">Materials, pricing and delivery—confirmed for the job.</h2>
+          <p className="eyebrow">Hum kya karte hain</p>
+          <h2 className="section-title">Material, rate aur delivery, job ke hisaab se confirm.</h2>
         </div>
         <p>
-          We receive the requirement, confirm material and delivery feasibility, provide a quote and
-          coordinate fulfilment. We do not publish fixed prices that can quickly become inaccurate.
+          Requirement receive karke material aur delivery feasibility check karte hain, phir quote
+          share karte hain aur fulfilment coordinate karte hain. Fixed prices publish nahi karte,
+          kyunki rate requirement ke hisaab se change ho sakta hai.
         </p>
       </section>
       <div className="factor-grid mt-14">
@@ -60,11 +61,11 @@ function Page() {
       <section className="trust-strip">
         <ShieldCheck />
         <div>
-          <h2>Clarity before claims</h2>
+          <h2>Pehle clarity, phir commitment</h2>
           <p>
-            Enquiries are welcome from anywhere in India, and each one is checked honestly. No
-            blanket stock, quality or timing promise is made. Business details and verified proof
-            appear only after approval.
+            India bhar se enquiries welcome hain aur har requirement honestly check hoti hai. Stock,
+            quality ya timing ka blanket promise nahi hai. Business details aur verified proof
+            approval ke baad hi dikhaya jayega.
           </p>
         </div>
       </section>

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/how-it-works")({
     seoHead({
       title: "How Construction Material Quotes Work in India | Rodiwala",
       description:
-        "See how Rodiwala confirms requirements, availability, pricing and delivery for sites across India.",
+        "Construction material quote kaise milega? Requirement, availability, delivered rate aur delivery ka process Rodiwala ke saath dekho.",
       path: "/how-it-works",
     }),
   component: Page,
@@ -16,27 +16,28 @@ export const Route = createFileRoute("/how-it-works")({
 function Page() {
   return (
     <ContentPage
-      eyebrow="How it works"
-      title="A useful quote starts with a complete requirement."
-      intro="The process is designed to reduce repeated questions and make delivery assumptions clear before dispatch."
+      eyebrow="Kaise hota hai"
+      title="Requirement bhejo, hum rate aur delivery check karenge."
+      intro="Material, quantity, site aur date ek message mein bhejo. Dispatch se pehle availability, freight aur access clear kar diya jata hai."
       quoteMaterial="Other material"
       image={deliveryImage}
     >
       <ProcessShowcase />
       <section className="result-panel">
         <div>
-          <p className="eyebrow text-accent">What you receive</p>
-          <h2>A quote built around the actual site.</h2>
+          <p className="eyebrow text-accent">Aapko kya milega</p>
+          <h2>Site ke hisaab se quote milta hai.</h2>
         </div>
         <div className="result-list">
-          <span>Material and specification basis</span>
-          <span>Delivered or ex-yard price basis</span>
-          <span>Freight clarity</span>
+          <span>Material aur specification basis</span>
+          <span>Delivered ya ex-yard price basis</span>
+          <span>Freight clearly stated</span>
           <span>Expected delivery timing</span>
         </div>
       </section>
       <p className="mt-8 text-center text-muted-foreground">
-        Your requirement goes directly to a person—there is no account, cart or automated checkout.
+        Aapki requirement seedha ek person tak jati hai. Account, cart ya automated checkout ki
+        zaroorat nahi hai.
       </p>
     </ContentPage>
   );

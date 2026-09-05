@@ -7,7 +7,7 @@ export const Route = createFileRoute("/aggregate/")({
     seoHead({
       title: "10 mm & 20 mm Rodi Aggregate | Rodiwala",
       description:
-        "Compare 10 mm and 20 mm rodi aggregate requirements and request delivered pricing for your construction site.",
+        "10 mm aur 20 mm rodi aggregate compare karo. Apni construction site ke liye quantity, location aur date bhejkar delivered rate poochho.",
       path: "/aggregate",
     }),
   component: Page,
@@ -17,14 +17,14 @@ function Page() {
   return (
     <ContentPage
       eyebrow="Aggregate guide"
-      title="Choose the aggregate size specified for your work."
-      intro="10 mm and 20 mm are distinct requirements. Compare common requests, then send the selected size, quantity, location and date."
+      title="10 mm ya 20 mm rodi? Jo specification hai, wahi bhejo."
+      intro="10 mm aur 20 mm alag requirements hain. Common uses compare karo, phir selected size, quantity, location aur date share karo."
       image={getMaterial("20-mm-rodi").image}
     >
       <div className="mb-10 max-w-2xl">
         <h2 className="section-title">Core aggregate sizes</h2>
         <p className="mt-3 text-muted-foreground">
-          Pick the size your contractor or engineer has specified, then send the requirement.
+          Contractor ya engineer ne jo size specify kiya hai, wahi choose karke requirement bhejo.
         </p>
       </div>
       <div className="catalogue-grid catalogue-grid-pair">
@@ -35,10 +35,10 @@ function Page() {
       <section className="comparison-section">
         <div>
           <p className="eyebrow">Quick comparison</p>
-          <h2 className="section-title">Two sizes. Different site requirements.</h2>
+          <h2 className="section-title">Do sizes, alag site requirements.</h2>
           <p>
-            Rodiwala captures the requested size but does not prescribe structural mixes. Confirm
-            suitability with your contractor or engineer.
+            Rodiwala requested size note karta hai, structural mix prescribe nahi karta. Suitability
+            apne contractor ya engineer se confirm kar lo.
           </p>
         </div>
         <div className="comparison-table">

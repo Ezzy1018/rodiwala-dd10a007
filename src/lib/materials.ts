@@ -28,13 +28,13 @@ export const materials: Material[] = [
     shortName: "10 mm Rodi",
     image: aggregate10,
     description:
-      "A smaller coarse aggregate commonly requested for concrete-related work and mixes where a finer aggregate size is specified.",
+      "10 mm aggregate, yaani 10 mm rodi, jo concrete-related work aur specified finer mixes ke liye commonly mangayi jati hai.",
     applications: [
-      "RCC and concrete-related requirements",
+      "RCC aur concrete-related requirements",
       "Dense reinforcement areas",
       "Project-specific mix requirements",
     ],
-    quoteNote: "Confirm the required size and suitability with your contractor or engineer.",
+    quoteNote: "Required size aur suitability apne contractor ya engineer se confirm kar lo.",
   },
   {
     slug: "20-mm-rodi",
@@ -43,13 +43,13 @@ export const materials: Material[] = [
     shortName: "20 mm Rodi",
     image: aggregate20,
     description:
-      "A commonly requested coarse aggregate for concrete and base-related construction requirements.",
+      "20 mm aggregate, yaani 20 mm rodi, jo concrete aur base-related construction work ke liye commonly mangayi jati hai.",
     applications: [
       "Concrete-related requirements",
-      "Base and structural site work",
+      "Base aur structural site work",
       "Bulk project supply",
     ],
-    quoteNote: "Share the required grade or source specification before quoting.",
+    quoteNote: "Quote se pehle required grade ya source specification share kar do.",
   },
   {
     slug: "stone-dust",
@@ -58,10 +58,10 @@ export const materials: Material[] = [
     shortName: "Stone Dust",
     image: stoneDust,
     description:
-      "Fine crushed-stone material requested for filling, levelling, paver bedding and other site work.",
-    applications: ["Filling and levelling", "Paver bedding", "Relevant base preparation"],
+      "Stone dust ek fine crushed-stone material hai, jo filling, levelling, paver bedding aur doosre site work ke liye mangayi jati hai.",
+    applications: ["Filling aur levelling", "Paver bedding", "Relevant base preparation"],
     quoteNote:
-      "Stone dust is not one universal specification; confirm the actual material required.",
+      "Stone dust ki ek hi universal specification nahi hoti. Actual material requirement confirm kar lo.",
   },
   {
     slug: "m-sand",
@@ -70,9 +70,9 @@ export const materials: Material[] = [
     shortName: "M-Sand",
     image: mSand,
     description:
-      "Manufactured fine aggregate requested for masonry, concrete and other project-specific applications.",
+      "M-sand ya crushed sand masonry, concrete aur project-specific fine aggregate requirements ke liye mangayi jati hai.",
     applications: ["Masonry requirements", "Concrete-related work", "Fine aggregate requirements"],
-    quoteNote: "Confirm the exact type and suitability with your contractor or engineer.",
+    quoteNote: "Exact type aur suitability apne contractor ya engineer se confirm kar lo.",
   },
   {
     slug: "ready-mix-concrete",
@@ -81,13 +81,13 @@ export const materials: Material[] = [
     shortName: "RMC",
     image: rmc,
     description:
-      "Concrete supplied to a stated grade or specification for a planned pour, subject to partner availability and site feasibility.",
+      "RMC planned pour ke liye stated grade ya specification ke hisaab se supply hota hai, partner availability aur site feasibility ke subject to.",
     applications: [
       "Planned structural pours",
       "Grade-specific requirements",
       "Time-sensitive concrete supply",
     ],
-    quoteNote: "Share grade, cubic metres, pump need, site access, and pour date and time.",
+    quoteNote: "Grade, cubic metres, pump need, site access aur pour date-time share kar do.",
   },
 ];
 
@@ -104,7 +104,7 @@ export function whatsappUrl(message: string) {
 }
 
 export const defaultQuoteMessage =
-  "Hi Rodiwala, I have a construction material requirement. Please help me with availability and delivered pricing.";
+  "Namaste Rodiwala, meri site ke liye construction material chahiye. Material, quantity, location aur required date share kar raha hoon. Availability aur delivered rate bata dijiye.";
 
 export function quoteHref(context?: string) {
   return whatsappUrl(context ? `${defaultQuoteMessage} (${context})` : defaultQuoteMessage);

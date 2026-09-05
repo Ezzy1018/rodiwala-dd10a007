@@ -5,10 +5,10 @@ import { Logo } from "./logo";
 import { phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
 
 const nav = [
-  ["Materials", "/buy-construction-material"],
-  ["Delivery areas", "/delivery-areas"],
-  ["How it works", "/how-it-works"],
-  ["About", "/about"],
+  ["Buy materials", "/buy-construction-material"],
+  ["Delivery check", "/delivery-areas"],
+  ["Kaise hota hai", "/how-it-works"],
+  ["Rodiwala ke baare mein", "/about"],
 ] as const;
 
 export function SiteShell({ children }: { children: ReactNode }) {
@@ -36,7 +36,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               className="hidden items-center gap-2 text-sm font-semibold text-primary sm:inline-flex"
             >
               <Phone size={16} />
-              Call us
+              Call karke poochho
             </a>
             <a
               href={quoteHref("Header")}
@@ -45,7 +45,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               className="btn-accent hidden sm:inline-flex"
             >
               <MessageCircle size={16} />
-              Get a quote
+              WhatsApp par quote lo
             </a>
             <button
               className="icon-button lg:hidden"
@@ -80,14 +80,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div className="footer-brand">
             <Logo />
             <p className="mt-3 max-w-md text-sm text-primary-foreground/65">
-              Construction-material sourcing for sites across India. Availability, delivered pricing
-              and delivery feasibility are confirmed for every requirement.
+              Construction material sourcing for sites across India. Har requirement ke liye
+              availability, delivered rate aur delivery feasibility check ki jati hai.
             </p>
           </div>
           <div className="flex gap-5 text-sm font-medium text-primary-foreground">
             <Link to="/contact">Contact</Link>
             <a href={quoteHref("Footer")} target="_blank" rel="noreferrer">
-              Get a quote
+              WhatsApp par quote lo
             </a>
           </div>
         </div>
@@ -95,18 +95,18 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-border bg-background p-2 pb-[calc(.5rem+env(safe-area-inset-bottom))] md:hidden">
         <a className="sticky-action" href={`tel:${phoneHref}`}>
           <Phone size={17} />
-          Call us
+          Call karke poochho
         </a>
         <a
           className="sticky-action"
           href={whatsappUrl(
-            "Hi Rodiwala, I have a construction material requirement. Please help me with availability and delivered pricing.",
+            "Namaste Rodiwala, meri site ke liye construction material chahiye. Material, quantity, location aur required date share kar raha hoon. Availability aur delivered rate bata dijiye.",
           )}
           target="_blank"
           rel="noreferrer"
         >
           <MessageCircle size={17} />
-          WhatsApp
+          WhatsApp par bhejo
         </a>
         <a
           className="sticky-action bg-accent text-accent-foreground"
@@ -114,7 +114,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           target="_blank"
           rel="noreferrer"
         >
-          Get a quote
+          Quote lo
         </a>
       </div>
     </div>

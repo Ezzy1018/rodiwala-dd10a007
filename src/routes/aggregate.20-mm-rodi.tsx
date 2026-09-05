@@ -7,7 +7,7 @@ export const Route = createFileRoute("/aggregate/20-mm-rodi")({
     seoHead({
       title: "20 mm Aggregate (Rodi) Supplier in India | Rodiwala",
       description:
-        "Request delivered pricing for 20 mm aggregate (rodi) for construction sites across India.",
+        "20 mm aggregate ya 20 mm rodi chahiye? Quantity, location aur date bhejkar construction site ke liye delivered rate poochho.",
       path: "/aggregate/20-mm-rodi",
     }),
   component: () => <MaterialPage material={getMaterial("20-mm-rodi")} />,

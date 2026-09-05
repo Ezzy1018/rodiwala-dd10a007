@@ -7,7 +7,7 @@ export const Route = createFileRoute("/ready-mix-concrete")({
     seoHead({
       title: "Ready-Mix Concrete Supplier in India | Rodiwala",
       description:
-        "Request an RMC quote with grade, volume, pump need, site and pour date across India.",
+        "RMC quote ke liye grade, volume, pump need, site aur pour date-time bhejo. Availability aur delivered rate check hoga.",
       path: "/ready-mix-concrete",
     }),
   component: () => <MaterialPage material={getMaterial("ready-mix-concrete")} />,

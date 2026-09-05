@@ -1,12 +1,12 @@
 # Rodiwala (also written Rodi Wala or Roadi Wala)
 
-> Rodiwala helps contractors, builders, site engineers and homeowners source construction materials and coordinate delivery for sites across India.
+> Construction material chahiye? Rodiwala contractors, builders, site engineers aur homeowners ko material source karne aur delivery coordinate karne mein help karta hai.
 
-Rodiwala is a quote-led construction material sourcing service. It does not claim fixed prices, universal stock or blanket delivery coverage. Availability, delivered pricing and feasibility are confirmed against the material, quantity, site, route and required date anywhere in India.
+Rodiwala quote-led construction material sourcing service hai. Fixed prices, universal stock ya blanket delivery coverage ka claim nahi karta. Availability, delivered rate aur feasibility material, quantity, site, route aur required date ke hisaab se confirm hoti hai.
 
 ## Core materials
 
-- [Construction materials catalogue and buying guide](https://rodiwala.vercel.app/buy-construction-material): 10 mm aggregate (rodi), 20 mm aggregate (rodi), stone dust, M-sand / crushed sand, and ready-mix concrete (RMC), plus how to send a complete requirement and receive a quote.
+- [Construction materials catalogue and buying guide](https://rodiwala.vercel.app/buy-construction-material): 10 mm aggregate (rodi), 20 mm aggregate (rodi), stone dust, M-sand / crushed sand aur ready-mix concrete (RMC), plus complete requirement bhejne aur quote lene ka process.
 - [10 mm aggregate](https://rodiwala.vercel.app/aggregate/10-mm-rodi)
 - [20 mm aggregate](https://rodiwala.vercel.app/aggregate/20-mm-rodi)
 - [Stone dust](https://rodiwala.vercel.app/stone-dust)
@@ -15,10 +15,10 @@ Rodiwala is a quote-led construction material sourcing service. It does not clai
 
 ## Delivery and contact
 
-- [Delivery areas and feasibility](https://rodiwala.vercel.app/delivery-areas)
-- [How the quote process works](https://rodiwala.vercel.app/how-it-works)
-- [Contact Rodiwala](https://rodiwala.vercel.app/contact): call +91 94161 65465 or send a requirement on WhatsApp.
+- [Delivery areas and feasibility](https://rodiwala.vercel.app/delivery-areas): Location bhejo, route aur freight feasibility check hogi.
+- [How the quote process works](https://rodiwala.vercel.app/how-it-works): Requirement, availability, delivered rate aur dispatch ka process.
+- [Contact Rodiwala](https://rodiwala.vercel.app/contact): +91 94161 65465 par call karo ya WhatsApp par requirement bhejo.
 
 ## Useful requirement details
 
-Include the material and size or grade, quantity and unit, delivery locality or pin code, required date, and vehicle access or unloading notes.
+Requirement mein material aur size ya grade, quantity aur unit, delivery locality ya pin code, required date aur vehicle access ya unloading notes include karo.
