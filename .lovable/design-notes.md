@@ -1,0 +1,1 @@
+Rodiwala design: Forest #063B32 and #1B7355, lime #A6C95C, warm off-white #F7F7F3, charcoal #2E2E2E. Space Grotesk headings and DM Sans body. Quote-first full-width layout; rounded but practical cards; minimal motion; evidence-safe claims.
