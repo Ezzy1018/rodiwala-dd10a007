@@ -18,7 +18,6 @@ import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as MSandRouteImport } from './routes/m-sand'
 import { Route as MaterialsRouteImport } from './routes/materials'
 import { Route as ReadyMixConcreteRouteImport } from './routes/ready-mix-concrete'
-import { Route as RequestQuoteRouteImport } from './routes/request-quote'
 import { Route as StoneDustRouteImport } from './routes/stone-dust'
 import { Route as AggregateIndexRouteImport } from './routes/aggregate.index'
 import { Route as Aggregate10MmRodiRouteImport } from './routes/aggregate.10-mm-rodi'
@@ -69,11 +68,6 @@ const ReadyMixConcreteRoute = ReadyMixConcreteRouteImport.update({
   path: '/ready-mix-concrete',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RequestQuoteRoute = RequestQuoteRouteImport.update({
-  id: '/request-quote',
-  path: '/request-quote',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const StoneDustRoute = StoneDustRouteImport.update({
   id: '/stone-dust',
   path: '/stone-dust',
@@ -105,7 +99,6 @@ export interface FileRoutesByFullPath {
   '/m-sand': typeof MSandRoute
   '/materials': typeof MaterialsRoute
   '/ready-mix-concrete': typeof ReadyMixConcreteRoute
-  '/request-quote': typeof RequestQuoteRoute
   '/stone-dust': typeof StoneDustRoute
   '/aggregate/10-mm-rodi': typeof Aggregate10MmRodiRoute
   '/aggregate/20-mm-rodi': typeof Aggregate20MmRodiRoute
@@ -120,7 +113,6 @@ export interface FileRoutesByTo {
   '/m-sand': typeof MSandRoute
   '/materials': typeof MaterialsRoute
   '/ready-mix-concrete': typeof ReadyMixConcreteRoute
-  '/request-quote': typeof RequestQuoteRoute
   '/stone-dust': typeof StoneDustRoute
   '/aggregate/10-mm-rodi': typeof Aggregate10MmRodiRoute
   '/aggregate/20-mm-rodi': typeof Aggregate20MmRodiRoute
@@ -137,7 +129,6 @@ export interface FileRoutesById {
   '/m-sand': typeof MSandRoute
   '/materials': typeof MaterialsRoute
   '/ready-mix-concrete': typeof ReadyMixConcreteRoute
-  '/request-quote': typeof RequestQuoteRoute
   '/stone-dust': typeof StoneDustRoute
   '/aggregate/10-mm-rodi': typeof Aggregate10MmRodiRoute
   '/aggregate/20-mm-rodi': typeof Aggregate20MmRodiRoute
@@ -155,7 +146,6 @@ export interface FileRouteTypes {
     | '/m-sand'
     | '/materials'
     | '/ready-mix-concrete'
-    | '/request-quote'
     | '/stone-dust'
     | '/aggregate/10-mm-rodi'
     | '/aggregate/20-mm-rodi'
@@ -170,7 +160,6 @@ export interface FileRouteTypes {
     | '/m-sand'
     | '/materials'
     | '/ready-mix-concrete'
-    | '/request-quote'
     | '/stone-dust'
     | '/aggregate/10-mm-rodi'
     | '/aggregate/20-mm-rodi'
@@ -186,7 +175,6 @@ export interface FileRouteTypes {
     | '/m-sand'
     | '/materials'
     | '/ready-mix-concrete'
-    | '/request-quote'
     | '/stone-dust'
     | '/aggregate/10-mm-rodi'
     | '/aggregate/20-mm-rodi'
@@ -203,7 +191,6 @@ export interface RootRouteChildren {
   MSandRoute: typeof MSandRoute
   MaterialsRoute: typeof MaterialsRoute
   ReadyMixConcreteRoute: typeof ReadyMixConcreteRoute
-  RequestQuoteRoute: typeof RequestQuoteRoute
   StoneDustRoute: typeof StoneDustRoute
 }
 
@@ -272,13 +259,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReadyMixConcreteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/request-quote': {
-      id: '/request-quote'
-      path: '/request-quote'
-      fullPath: '/request-quote'
-      preLoaderRoute: typeof RequestQuoteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/stone-dust': {
       id: '/stone-dust'
       path: '/stone-dust'
@@ -336,7 +316,6 @@ const rootRouteChildren: RootRouteChildren = {
   MSandRoute: MSandRoute,
   MaterialsRoute: MaterialsRoute,
   ReadyMixConcreteRoute: ReadyMixConcreteRoute,
-  RequestQuoteRoute: RequestQuoteRoute,
   StoneDustRoute: StoneDustRoute,
 }
 export const routeTree = rootRouteImport

@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, MessageCircle, Phone } from "lucide-react";
-import { QuoteBuilder } from "./quote-builder";
-import { materials, phoneDisplay, phoneHref, type Material } from "@/lib/materials";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { QuoteButtons, QuoteCta } from "./quote-cta";
+import { materials, type Material } from "@/lib/materials";
 import logoMark from "@/assets/rodiwala-logo-mark.png";
 import heroImage from "@/assets/rodiwala-yard-hero.jpg";
 
 export function ContentPage({ eyebrow, title, intro, children, quoteMaterial, image = heroImage }: { eyebrow: string; title: string; intro: string; children: React.ReactNode; quoteMaterial?: string; image?: string }) {
-  return <main><section className="page-hero"><img src={image} alt="" className="page-hero-image"/><div className="page-hero-shade"/><img src={logoMark} alt="" className="brand-watermark"/><div className="page-hero-content"><p className="eyebrow text-accent">{eyebrow}</p><h1>{title}</h1><p>{intro}</p><div className="mt-7 flex flex-wrap gap-3"><Link to="/request-quote" className="btn-accent"><MessageCircle size={18}/>Get a quote</Link><a href={`tel:${phoneHref}`} className="btn-ghost-light"><Phone size={18}/>Call {phoneDisplay}</a></div></div></section><section className="content-band"><div className="mx-auto max-w-7xl px-5 lg:px-8">{children}</div></section>{quoteMaterial && <section className="bg-primary py-16"><div className="mx-auto max-w-7xl px-5 lg:px-8"><QuoteBuilder initialMaterial={quoteMaterial} source={title}/></div></section>}</main>;
+  return <main><section className="page-hero"><img src={image} alt="" className="page-hero-image"/><div className="page-hero-shade"/><img src={logoMark} alt="" className="brand-watermark"/><div className="page-hero-content"><p className="eyebrow text-accent">{eyebrow}</p><h1>{title}</h1><p>{intro}</p><div className="mt-7"><QuoteButtons context={title}/></div></div></section><section className="content-band"><div className="mx-auto max-w-7xl px-5 lg:px-8">{children}</div></section><QuoteCta context={quoteMaterial ?? title}/></main>;
 }
 
 export function MaterialPage({ material }: { material: Material }) {

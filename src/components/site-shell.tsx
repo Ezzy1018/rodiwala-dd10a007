@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, MessageCircle, Phone, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { Logo } from "./logo";
-import { phoneDisplay, phoneHref, whatsappUrl } from "@/lib/materials";
+import { phoneDisplay, phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
 
 const nav = [
   ["Materials", "/materials"],
@@ -22,7 +22,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             {nav.map(([label,to]) => <Link key={to} to={to} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary" activeProps={{className:"text-primary"}}>{label}</Link>)}
           </nav>
           <a href={`tel:${phoneHref}`} className="hidden items-center gap-2 text-sm font-semibold text-primary sm:inline-flex"><Phone size={16}/>{phoneDisplay}</a>
-          <Link to="/request-quote" className="btn-accent hidden sm:inline-flex"><MessageCircle size={16}/>Get quote</Link>
+          <a href={quoteHref("Header")} target="_blank" rel="noreferrer" className="btn-accent hidden sm:inline-flex"><MessageCircle size={16}/>Get quote</a>
           <button className="icon-button lg:hidden" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen((value) => !value)}>{open ? <X/> : <Menu/>}</button>
         </div>
       </div>
@@ -32,13 +32,13 @@ export function SiteShell({ children }: { children: ReactNode }) {
      <footer className="border-t border-primary/15 bg-primary text-primary-foreground">
        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-12 sm:flex-row sm:items-end sm:justify-between">
          <div className="footer-brand"><Logo/><p className="mt-3 max-w-md text-sm text-primary-foreground/65">Construction-material sourcing for Delhi NCR and Uttar Pradesh. Availability, delivered pricing and feasibility are confirmed for every requirement.</p></div>
-         <div className="flex gap-5 text-sm font-medium text-primary-foreground"><Link to="/contact">Contact</Link><Link to="/request-quote">Request quote</Link></div>
+         <div className="flex gap-5 text-sm font-medium text-primary-foreground"><Link to="/contact">Contact</Link><a href={quoteHref("Footer")} target="_blank" rel="noreferrer">Get a quote</a></div>
       </div>
     </footer>
     <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-border bg-background p-2 pb-[calc(.5rem+env(safe-area-inset-bottom))] md:hidden">
       <a className="sticky-action" href={`tel:${phoneHref}`}><Phone size={17}/>Call</a>
       <a className="sticky-action" href={whatsappUrl("Hi Rodiwala, I have a construction material requirement. Please help me with availability and delivered pricing.")} target="_blank" rel="noreferrer"><MessageCircle size={17}/>WhatsApp</a>
-      <Link className="sticky-action bg-accent text-accent-foreground" to="/request-quote">Get quote</Link>
+      <a className="sticky-action bg-accent text-accent-foreground" href={quoteHref("Mobile bar")} target="_blank" rel="noreferrer">Get quote</a>
     </div>
   </div>;
 }
