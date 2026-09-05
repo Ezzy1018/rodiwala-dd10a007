@@ -99,7 +99,7 @@ export function MaterialPage({ material }: { material: Material }) {
               <p className="eyebrow">Continue browsing</p>
               <h2 className="section-title">Related site materials</h2>
             </div>
-            <Link to="/materials" className="text-link">
+            <Link to="/buy-construction-material" className="text-link">
               Full catalogue <ArrowRight size={16} />
             </Link>
           </div>

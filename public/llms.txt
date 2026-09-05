@@ -6,8 +6,7 @@ Rodiwala is a quote-led construction material sourcing service. It does not clai
 
 ## Core materials
 
-- [Construction materials catalogue](https://rodiwala.lovable.app/materials): 10 mm aggregate (rodi), 20 mm aggregate (rodi), stone dust, M-sand / crushed sand, and ready-mix concrete (RMC).
-- [Buy construction material](https://rodiwala.lovable.app/buy-construction-material): how to send a complete requirement and receive a quote.
+- [Construction materials catalogue and buying guide](https://rodiwala.lovable.app/buy-construction-material): 10 mm aggregate (rodi), 20 mm aggregate (rodi), stone dust, M-sand / crushed sand, and ready-mix concrete (RMC), plus how to send a complete requirement and receive a quote.
 - [10 mm aggregate](https://rodiwala.lovable.app/aggregate/10-mm-rodi)
 - [20 mm aggregate](https://rodiwala.lovable.app/aggregate/20-mm-rodi)
 - [Stone dust](https://rodiwala.lovable.app/stone-dust)
