@@ -28,13 +28,14 @@ export const materials: Material[] = [
     shortName: "10 mm Rodi",
     image: aggregate10,
     description:
-      "A smaller coarse aggregate commonly requested for concrete-related work and mixes where a finer aggregate size is specified.",
+      "10 mm coarse aggregate, jise site par 10 mm rodi bola jata hai. Chhote size ka aggregate, aam taur par concrete work aur un mixes ke liye manga jata hai jahan finer size specify hua ho.",
     applications: [
-      "RCC and concrete-related requirements",
-      "Dense reinforcement areas",
-      "Project-specific mix requirements",
+      "RCC aur concrete-related requirement",
+      "Dense reinforcement wale areas",
+      "Project-specific mix requirement",
     ],
-    quoteNote: "Confirm the required size and suitability with your contractor or engineer.",
+    quoteNote:
+      "Size aur suitability apne contractor ya engineer se confirm kar lena, phir quantity bhejo.",
   },
   {
     slug: "20-mm-rodi",
@@ -43,13 +44,13 @@ export const materials: Material[] = [
     shortName: "20 mm Rodi",
     image: aggregate20,
     description:
-      "A commonly requested coarse aggregate for concrete and base-related construction requirements.",
+      "20 mm coarse aggregate, yaani site ki bhasha mein 20 mm rodi. Concrete aur base-related kaam ke liye sabse aam taur par manga jaane wala aggregate size.",
     applications: [
-      "Concrete-related requirements",
-      "Base and structural site work",
+      "Concrete-related requirement",
+      "Base aur structural site work",
       "Bulk project supply",
     ],
-    quoteNote: "Share the required grade or source specification before quoting.",
+    quoteNote: "Grade ya source specification jo chahiye, wahi bhejo taki quote sahi bane.",
   },
   {
     slug: "stone-dust",
@@ -58,10 +59,10 @@ export const materials: Material[] = [
     shortName: "Stone Dust",
     image: stoneDust,
     description:
-      "Fine crushed-stone material requested for filling, levelling, paver bedding and other site work.",
-    applications: ["Filling and levelling", "Paver bedding", "Relevant base preparation"],
+      "Crushed stone se bana fine material. Filling, levelling, paver bedding aur base preparation jaise site kaam ke liye manga jata hai.",
+    applications: ["Filling aur levelling", "Paver bedding", "Base preparation"],
     quoteNote:
-      "Stone dust is not one universal specification; confirm the actual material required.",
+      "Stone dust ek hi universal specification nahi hoti — jo material actually chahiye, wahi batao.",
   },
   {
     slug: "m-sand",
@@ -70,9 +71,9 @@ export const materials: Material[] = [
     shortName: "M-Sand",
     image: mSand,
     description:
-      "Manufactured fine aggregate requested for masonry, concrete and other project-specific applications.",
-    applications: ["Masonry requirements", "Concrete-related work", "Fine aggregate requirements"],
-    quoteNote: "Confirm the exact type and suitability with your contractor or engineer.",
+      "Manufactured fine aggregate, jise M-sand ya crushed sand kehte hain. Masonry, concrete aur project-specific fine aggregate requirement ke liye use hoti hai.",
+    applications: ["Masonry requirement", "Concrete-related work", "Fine aggregate requirement"],
+    quoteNote: "Exact type aur suitability contractor ya engineer se confirm karke bhejo.",
   },
   {
     slug: "ready-mix-concrete",
@@ -81,13 +82,14 @@ export const materials: Material[] = [
     shortName: "RMC",
     image: rmc,
     description:
-      "Concrete supplied to a stated grade or specification for a planned pour, subject to partner availability and site feasibility.",
+      "Ready-mix concrete, stated grade ya specification par supply hoti hai planned pour ke liye — partner availability aur site feasibility ke hisaab se.",
     applications: [
-      "Planned structural pours",
-      "Grade-specific requirements",
+      "Planned structural pour",
+      "Grade-specific requirement",
       "Time-sensitive concrete supply",
     ],
-    quoteNote: "Share grade, cubic metres, pump need, site access, and pour date and time.",
+    quoteNote:
+      "Grade, cubic metres, pump chahiye ya nahi, site access aur pour ka date-time bhejo.",
   },
 ];
 
@@ -104,7 +106,10 @@ export function whatsappUrl(message: string) {
 }
 
 export const defaultQuoteMessage =
-  "Hi Rodiwala, I have a construction material requirement. Please help me with availability and delivered pricing.";
+  "Namaste Rodiwala, meri site ke liye construction material chahiye. Availability aur delivered rate bata dijiye.";
+
+export const detailedQuoteMessage =
+  "Namaste Rodiwala, meri site ke liye material chahiye. Material: [naam]. Quantity: [quantity aur unit]. Location/pin code: [location]. Required date: [date]. Site access ya unloading note: [details]. Availability aur delivered rate bata dijiye.";
 
 export function quoteHref(context?: string) {
   return whatsappUrl(context ? `${defaultQuoteMessage} (${context})` : defaultQuoteMessage);
