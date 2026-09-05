@@ -36,13 +36,13 @@ function Index() {
         <div className="home-hero-content">
           <p className="eyebrow text-accent">
             <span className="status-dot" />
-            Construction material supply across India
+            Rodi, M-sand aur RMC ke liye seedha quote
           </p>
-          <h1>Buy construction materials for your site.</h1>
+          <h1>Construction material chahiye? Rodiwala se mangwao.</h1>
           <p>
-            Rodiwala sources 10 mm and 20 mm aggregate (rodi), stone dust, M-sand and ready-mix
-            concrete, then confirms the delivered quote for your quantity, site and date, wherever
-            in India you are building.
+            10 mm aur 20 mm rodi, stone dust, M-sand ya ready-mix concrete (RMC) chahiye? Apni
+            quantity, site location aur required date WhatsApp par bhejo. Availability, freight aur
+            delivered rate check karke bata denge — India mein kahin bhi site ho.
           </p>
           <div className="mt-8">
             <QuoteButtons context="Homepage hero" />
@@ -50,16 +50,16 @@ function Index() {
         </div>
         <div className="home-hero-facts">
           <span>
-            <strong>India</strong>-wide enquiries
+            <strong>India</strong> bhar se enquiry
           </span>
           <span>
-            <strong>5</strong> core materials
+            <strong>5</strong> core material
           </span>
           <span>
-            <strong>1</strong> direct conversation
+            <strong>1</strong> seedhi baat
           </span>
           <span>
-            <strong>0</strong> checkout guesswork
+            <strong>0</strong> guesswork
           </span>
         </div>
       </section>
@@ -69,10 +69,10 @@ function Index() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Material catalogue</p>
-              <h2 className="section-title">Choose what your site needs.</h2>
+              <h2 className="section-title">Site ke liye kaunsa material chahiye?</h2>
             </div>
             <Link to="/buy-construction-material" className="text-link hidden sm:inline-flex">
-              Explore the catalogue <ArrowRight size={16} />
+              Poora catalogue dekho <ArrowRight size={16} />
             </Link>
           </div>
           <div className="catalogue-grid">
@@ -81,9 +81,9 @@ function Index() {
             ))}
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
-            Need cement, TMT steel, bricks, blocks, pavers or something else?{" "}
+            Cement, TMT steel, bricks, blocks, pavers ya koi aur samaan chahiye?{" "}
             <Link to="/buy-construction-material" className="font-semibold text-primary">
-              Send the requirement.
+              Requirement bhejo.
             </Link>
           </p>
         </div>
@@ -92,20 +92,20 @@ function Index() {
       <section className="content-band bg-secondary">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-[.8fr_1.2fr] lg:px-8">
           <div>
-            <p className="eyebrow">Find the right supplier</p>
+            <p className="eyebrow">Sahi supplier dhoondh rahe ho?</p>
             <h2 className="section-title">
-              Construction material buying, without checkout guesswork.
+              Construction material khareedna hai? Pehle requirement bhejo.
             </h2>
           </div>
           <div>
             <p className="text-lg text-muted-foreground">
-              Rodiwala is sometimes written or searched as Rodi Wala or Roadi Wala. If you need to
-              buy construction material, send the material, quantity, delivery location and required
-              date. A person checks availability, freight and site feasibility before confirming the
-              quote.
+              Rodiwala ko log Rodi Wala ya Roadi Wala bhi likhte hain. Construction material
+              khareedna ho to material, quantity, delivery location aur required date bhej do.
+              Availability, freight aur site feasibility ek insaan check karta hai, tabhi quote
+              confirm hota hai.
             </p>
             <Link to="/buy-construction-material" className="btn-outline mt-7">
-              How to buy materials <ArrowRight size={17} />
+              Material kaise mangwayein <ArrowRight size={17} />
             </Link>
           </div>
         </div>
@@ -113,14 +113,14 @@ function Index() {
 
       <section className="content-band bg-secondary">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <p className="eyebrow">How we do it</p>
+          <p className="eyebrow">Kaam kaise hota hai</p>
           <h2 className="section-title max-w-2xl">
             From site requirement to coordinated delivery.
           </h2>
           <ProcessShowcase />
           <div className="mt-8">
             <Link to="/how-it-works" className="btn-outline">
-              See the full process <ArrowRight size={17} />
+              Poora process dekho <ArrowRight size={17} />
             </Link>
           </div>
         </div>
@@ -130,17 +130,17 @@ function Index() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-[.85fr_1.15fr] lg:px-8">
           <div>
             <p className="eyebrow">Delivery coverage</p>
-            <h2 className="section-title">Your location shapes the quote.</h2>
+            <h2 className="section-title">Aapki site tak delivery possible hai? Location bhejo.</h2>
             <p className="mt-4 max-w-lg text-lg text-muted-foreground">
-              Rodiwala takes requirements from sites across India. Feasibility depends on the
-              nearest source, load, route and site access, so share the exact city, locality or pin
-              code and the route gets checked for you.
+              Rodiwala India bhar ki sites se requirement leta hai. Feasibility nearest source,
+              load, route aur site access par depend karti hai — isliye exact city, locality ya pin
+              code bhejo, route check karke bata denge.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-foreground">
               {[
-                "Freight basis stated clearly",
-                "Vehicle access checked",
-                "Timing confirmed before dispatch",
+                "Freight ka basis clear bataya jata hai",
+                "Vehicle access check hota hai",
+                "Dispatch se pehle timing confirm hoti hai",
               ].map((x) => (
                 <li className="flex gap-3" key={x}>
                   <Check className="shrink-0 text-primary" size={19} />
@@ -149,7 +149,7 @@ function Index() {
               ))}
             </ul>
             <Link to="/delivery-areas" className="btn-outline mt-7">
-              Check delivery factors <ArrowRight size={17} />
+              Delivery factors dekho <ArrowRight size={17} />
             </Link>
           </div>
           <div className="image-frame">
@@ -167,39 +167,39 @@ function Index() {
 
       <section className="bg-secondary py-14">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <p className="eyebrow">The sourcing promise</p>
+          <p className="eyebrow">Hamara tarika</p>
           <h2 className="section-title max-w-3xl">
-            Tell us the material, quantity, site and required date.
+            Material, quantity, site aur date bhejo — baaki hum check karenge.
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-            Rodiwala will confirm availability, delivered pricing and delivery feasibility. Real
-            delivery photos, business details and verified reviews will be added only after
-            approval.
+            Availability, delivered rate aur delivery feasibility confirm karke batayi jaati hai.
+            Asli delivery photos, business details aur verified reviews approval ke baad hi add
+            honge.
           </p>
         </div>
       </section>
 
       <section id="faq" className="bg-background py-14">
         <div className="mx-auto max-w-3xl px-5">
-          <p className="eyebrow">Practical questions</p>
-          <h2 className="section-title">Good to know before you enquire.</h2>
+          <p className="eyebrow">Aksar poochhe jaane wale sawaal</p>
+          <h2 className="section-title">Enquiry se pehle ye jaan lo.</h2>
           <div className="faq-list">
             {[
               [
-                "How do I get a price?",
-                "Pricing depends on the material, quantity, source, delivery distance, vehicle and date. Send your requirement for a delivered quote.",
+                "Rate kaise milega?",
+                "Rate material, quantity, source, delivery distance, vehicle aur date par depend karta hai. Requirement bhejo, delivered quote bata denge.",
               ],
               [
-                "What is the minimum order?",
-                "A minimum has not been published yet. Share your quantity and location so the team can confirm whether delivery is workable.",
+                "Minimum order kitna hai?",
+                "Abhi koi minimum publish nahi kiya gaya hai. Quantity aur location bhejo, team check karke batayegi ki delivery workable hai ya nahi.",
               ],
               [
-                "Can you help me choose a grade?",
-                "We can clarify what is available, but technical suitability should be confirmed with your contractor or engineer.",
+                "Grade choose karne mein help milegi?",
+                "Kya available hai wo bata sakte hain, lekin technical suitability apne contractor ya engineer se confirm karo.",
               ],
               [
-                "Do you deliver anywhere in India?",
-                "Enquiries are welcome from anywhere in India. No blanket promise is made. Every delivery is checked against the nearest source, exact locality, quantity and vehicle access.",
+                "Kya India mein kahin bhi delivery hoti hai?",
+                "Enquiry India mein kahin se bhi kar sakte ho. Blanket promise nahi karte — har delivery nearest source, exact locality, quantity aur vehicle access ke hisaab se check hoti hai.",
               ],
             ].map(([q, a]) => (
               <details key={q}>
@@ -217,20 +217,20 @@ function Index() {
           "@type": "FAQPage",
           mainEntity: [
             [
-              "How do I get a price?",
-              "Pricing depends on the material, quantity, source, delivery distance, vehicle and date. Send your requirement for a delivered quote.",
+              "Rate kaise milega?",
+              "Rate material, quantity, source, delivery distance, vehicle aur date par depend karta hai. Requirement bhejo, delivered quote bata denge.",
             ],
             [
-              "What is the minimum order?",
-              "A minimum has not been published yet. Share your quantity and location so the team can confirm whether delivery is workable.",
+              "Minimum order kitna hai?",
+              "Abhi koi minimum publish nahi kiya gaya hai. Quantity aur location bhejo, team check karke batayegi ki delivery workable hai ya nahi.",
             ],
             [
-              "Can you help me choose a grade?",
-              "We can clarify what is available, but technical suitability should be confirmed with your contractor or engineer.",
+              "Grade choose karne mein help milegi?",
+              "Kya available hai wo bata sakte hain, lekin technical suitability apne contractor ya engineer se confirm karo.",
             ],
             [
-              "Do you deliver anywhere in India?",
-              "Enquiries are welcome from anywhere in India. No blanket promise is made. Every delivery is checked against the nearest source, exact locality, quantity and vehicle access.",
+              "Kya India mein kahin bhi delivery hoti hai?",
+              "Enquiry India mein kahin se bhi kar sakte ho. Blanket promise nahi karte — har delivery nearest source, exact locality, quantity aur vehicle access ke hisaab se check hoti hai.",
             ],
           ].map(([name, text]) => ({
             "@type": "Question",
