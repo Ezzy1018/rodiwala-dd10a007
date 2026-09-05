@@ -11,6 +11,8 @@ import logoMark from "@/assets/rodiwala-logo-mark.png";
 import { StructuredData } from "@/components/structured-data";
 import { seoHead } from "@/lib/seo";
 
+const homepageMaterials = materials.filter((item) => item.slug !== "ready-mix-concrete");
+
 export const Route = createFileRoute("/")({
   head: () =>
     seoHead({
@@ -52,7 +54,7 @@ function Index() {
             <strong>India</strong>-wide enquiries
           </span>
           <span>
-            <strong>6</strong> core materials
+            <strong>5</strong> core materials
           </span>
           <span>
             <strong>1</strong> direct conversation
@@ -75,7 +77,7 @@ function Index() {
             </Link>
           </div>
           <div className="catalogue-grid">
-            {materials.map((item) => (
+            {homepageMaterials.map((item) => (
               <MaterialTile material={item} key={item.slug} />
             ))}
           </div>
