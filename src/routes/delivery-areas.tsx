@@ -8,7 +8,7 @@ export const Route = createFileRoute("/delivery-areas")({
     seoHead({
       title: "Construction Material Delivery Across India | Rodiwala",
       description:
-        "Check construction material delivery feasibility for your site anywhere in India. Share your city, locality or pin code for a route and freight check.",
+        "Aapki site tak construction material delivery possible hai? City, locality ya pin code bhejo — route, vehicle access aur freight check karke bata denge.",
       path: "/delivery-areas",
     }),
   component: Page,
@@ -18,24 +18,24 @@ function Page() {
     {
       Icon: MapPin,
       title: "Exact location",
-      text: "Share the city, locality or pin code anywhere in India so route and source distance can be reviewed.",
+      text: "City, locality ya pin code bhejo (India mein kahin bhi) taki route aur source distance check ho sake.",
     },
     {
       Icon: Truck,
-      title: "Load and vehicle",
-      text: "Material type, quantity and unit influence the practical vehicle option.",
+      title: "Load aur vehicle",
+      text: "Material type, quantity aur unit se tay hota hai ki kaunsa vehicle practical rahega.",
     },
     {
       Icon: RouteIcon,
       title: "Site access",
-      text: "Road width, entry restrictions and unloading notes help avoid a failed dispatch.",
+      text: "Road width, entry restriction aur unloading note batane se failed dispatch bachta hai.",
     },
   ];
   return (
     <ContentPage
       eyebrow="Delivery coverage"
-      title="Tell us the site. We’ll check the route."
-      intro="Rodiwala accepts construction material enquiries from sites across India. Every delivery is checked against the nearest source, actual load, route and site access."
+      title="Aapki site tak delivery possible hai? Location bhejo."
+      intro="Rodiwala India bhar ki sites se enquiry leta hai. Har delivery nearest source, actual load, route aur site access ke hisaab se check hoti hai."
       quoteMaterial="Other material"
       image={deliveryImage}
     >
@@ -50,11 +50,11 @@ function Page() {
       </div>
       <section className="mt-20">
         <p className="eyebrow">Enquiry coverage</p>
-        <h2 className="section-title">Sites across India, one conversation.</h2>
+        <h2 className="section-title">India bhar ki sites, ek hi baatcheet.</h2>
         <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-          Requirements reach us from metros, tier-2 cities, industrial belts and semi-urban sites.
-          Tell us where you are building and the nearest workable source and route are reviewed for
-          you.
+          Metro cities, tier-2 shehron, industrial belts aur semi-urban sites — har jagah se
+          requirement aati hai. Aap batao site kahan hai, hum nearest workable source aur route
+          check kar lenge.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           {[
@@ -77,19 +77,19 @@ function Page() {
       </section>
       <section className="mt-20 grid gap-10 bg-secondary p-7 md:grid-cols-2 md:p-10">
         <div>
-          <p className="eyebrow">What gets confirmed</p>
-          <h2 className="section-title">A delivery plan, not a blanket promise.</h2>
+          <p className="eyebrow">Kya confirm hota hai</p>
+          <h2 className="section-title">Delivery plan, blanket promise nahi.</h2>
           <p className="mt-4 text-muted-foreground">
-            Timing and freight depend on source, distance, quantity, vehicle and site access. They
-            are confirmed with the quote.
+            Timing aur freight source, distance, quantity, vehicle aur site access par depend karte
+            hain. Ye sab quote ke saath confirm hote hain.
           </p>
         </div>
         <ul className="space-y-4">
           {[
-            "Whether the requested material is available",
-            "Whether the load and vehicle suit the route",
-            "Whether freight is included or separate",
-            "Expected timing before dispatch",
+            "Manga gaya material available hai ya nahi",
+            "Load aur vehicle route ke hisaab se sahi hain ya nahi",
+            "Freight included hai ya alag",
+            "Dispatch se pehle expected timing",
           ].map((item) => (
             <li className="flex gap-3" key={item}>
               <CheckCircle2 className="shrink-0 text-primary" />

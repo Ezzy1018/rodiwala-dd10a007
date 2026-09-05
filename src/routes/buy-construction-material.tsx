@@ -7,16 +7,16 @@ import { seoHead } from "@/lib/seo";
 
 const faqs = [
   {
-    name: "Can I buy construction material online from Rodiwala?",
-    text: "Rodiwala uses a quote-led buying process rather than a fixed-price cart. Send the material, quantity, delivery location and required date on WhatsApp, and the team will confirm availability and delivered pricing.",
+    name: "Kya Rodiwala se online construction material khareed sakte hain?",
+    text: "Rodiwala par fixed-price cart nahi hai, quote-led process hai. Material, quantity, delivery location aur required date WhatsApp par bhejo — team availability aur delivered rate confirm karegi.",
   },
   {
-    name: "What construction materials can I order?",
-    text: "The core catalogue includes 10 mm and 20 mm aggregate (rodi), stone dust, M-sand or crushed sand, and ready-mix concrete. Cement, TMT steel, bricks, blocks, pavers and other requirements can also be requested for sourcing confirmation.",
+    name: "Kaunse construction materials order ho sakte hain?",
+    text: "Core catalogue mein 10 mm aur 20 mm aggregate (rodi), stone dust, M-sand ya crushed sand, aur ready-mix concrete hain. Cement, TMT steel, bricks, blocks, pavers ya koi aur requirement bhi bhej sakte ho — sourcing check karke bata denge.",
   },
   {
-    name: "Where does Rodiwala deliver construction material?",
-    text: "Rodiwala accepts enquiries from construction sites across India. Feasibility depends on the exact city or pin code, quantity, route, vehicle access and required date.",
+    name: "Rodiwala kahan-kahan construction material deliver karta hai?",
+    text: "Enquiry India bhar ki sites se aati hai. Feasibility exact city ya pin code, quantity, route, vehicle access aur required date par depend karti hai.",
   },
 ];
 
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/buy-construction-material")({
     seoHead({
       title: "Buy Construction Material in India | Rodiwala",
       description:
-        "Buy or source aggregate, stone dust, M-sand, RMC and other construction materials across India. Send Rodiwala your requirement for a delivered quote.",
+        "Construction material khareedna hai? Aggregate (rodi), stone dust, M-sand, RMC ya koi aur samaan — requirement bhejo aur delivered quote lo. India bhar se enquiry.",
       path: "/buy-construction-material",
     }),
   component: Page,
@@ -36,29 +36,29 @@ function Page() {
     <>
       <ContentPage
         eyebrow="Buy construction material"
-        title="Buy the material your site actually needs."
-        intro="Rodiwala helps contractors, builders, site engineers and homeowners across India source construction materials through a clear, quote-led process."
+        title="Construction material khareedna hai? Pehle requirement bhejo."
+        intro="Rodiwala par fixed-price cart nahi hai. Material, quantity, delivery location aur date bhejo — team availability, route, freight aur site access check karke delivered quote confirm karegi."
         quoteMaterial="Buy construction material"
       >
         <section className="detail-grid">
           <div>
-            <p className="eyebrow">What you can order</p>
-            <h2 className="section-title">Core materials, sourced for the job.</h2>
+            <p className="eyebrow">Kya order kar sakte ho</p>
+            <h2 className="section-title">Core materials, kaam ke hisaab se source hote hain.</h2>
             <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-              Share the size, grade or specification where it matters. The team checks the
-              requirement against source availability, delivery distance and site access before
-              confirming a quote.
+              Jahan size, grade ya specification zaroori hai, wo zaroor bhejo. Team source
+              availability, delivery distance aur site access check karke hi quote confirm karti
+              hai.
             </p>
           </div>
           <div className="checklist-panel">
-            <p className="eyebrow text-accent">Send these details</p>
-            <h2>Make the first message useful.</h2>
+            <p className="eyebrow text-accent">Quote ke liye ye details bhejo</p>
+            <h2>Pehla message hi poora bhejo.</h2>
             <ul>
               {[
-                "Material and size or grade",
-                "Quantity and unit",
-                "Delivery locality or pin code",
-                "Required date and access notes",
+                "Material aur size ya grade",
+                "Quantity aur unit",
+                "Delivery locality ya pin code",
+                "Required date aur access note",
               ].map((item) => (
                 <li key={item}>
                   <CheckCircle2 size={20} />
@@ -73,7 +73,7 @@ function Page() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">Construction material catalogue</p>
-              <h2 className="section-title">Choose a material to get a quote.</h2>
+              <h2 className="section-title">Material chuno aur uska quote lo.</h2>
             </div>
           </div>
           <div className="catalogue-grid">
@@ -85,14 +85,14 @@ function Page() {
 
         <section className="mt-20 grid gap-8 border-t border-border pt-12 md:grid-cols-[.8fr_1.2fr]">
           <div>
-            <p className="eyebrow">Beyond the core range</p>
-            <h2 className="section-title">Need something else?</h2>
+            <p className="eyebrow">Core range ke alawa</p>
+            <h2 className="section-title">Koi aur samaan chahiye?</h2>
           </div>
           <div>
             <p className="text-lg text-muted-foreground">
-              Cement, TMT steel, bricks, blocks, pavers, sand and other project materials can be
-              requested. Share the exact specification so source and delivery feasibility can be
-              checked.
+              Cement, TMT steel, bricks, blocks, pavers, sand ya koi aur project material bhi
+              maang sakte ho. Exact specification bhejo taki source aur delivery feasibility check
+              ho sake.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               {["Cement", "TMT steel", "Bricks & blocks", "Pavers", "Other sand"].map((x) => (
@@ -107,17 +107,17 @@ function Page() {
               rel="noreferrer"
               className="btn-primary mt-8"
             >
-              Send another requirement →
+              Requirement bhejo →
             </a>
           </div>
         </section>
 
         <section className="mt-20 grid gap-6 md:grid-cols-4">
           {[
-            "Choose the material",
-            "Share quantity and site",
-            "Confirm the delivered quote",
-            "Schedule the dispatch",
+            "Material batao",
+            "Quantity aur site bhejo",
+            "Delivered rate confirm karo",
+            "Dispatch ka time fix karo",
           ].map((step, index) => (
             <article className="factor-card" key={step}>
               <span className="eyebrow text-accent">0{index + 1}</span>
@@ -125,10 +125,10 @@ function Page() {
               <p>
                 {
                   [
-                    "Start with aggregate, sand, dust or RMC.",
-                    "Add the locality, pin code and required date.",
-                    "Freight, timing and feasibility are stated clearly.",
-                    "Vehicle, site contact and timing are agreed before movement.",
+                    "Rodi, sand, dust ya RMC — jo chahiye wo batao.",
+                    "Locality, pin code aur required date add karo.",
+                    "Freight, timing aur feasibility clear likhkar di jaati hai.",
+                    "Vehicle, site contact aur timing pehle tay hote hain.",
                   ][index]
                 }
               </p>
@@ -137,20 +137,20 @@ function Page() {
         </section>
 
         <section className="mt-20 bg-secondary p-7 md:p-10">
-          <p className="eyebrow">A practical buying answer</p>
+          <p className="eyebrow">Seedhi baat</p>
           <h2 className="section-title">
-            Construction material buying without a fake “buy now” promise.
+            Site ke hisaab se quote, guesswork nahi.
           </h2>
           <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-            Rodiwala does not show universal prices or claim that every material is always in stock.
-            A delivered quote depends on the exact requirement. That is why the fastest route is a
-            complete WhatsApp message, not an incomplete cart.
+            Rodiwala universal price ya “har material hamesha stock mein hai” jaisa dawa nahi
+            karta. Delivered quote exact requirement par banta hai. Isliye sabse tez rasta ek poora
+            WhatsApp message hai, adhoora cart nahi.
           </p>
         </section>
 
         <section className="mt-20 max-w-3xl">
-          <p className="eyebrow">Frequently asked questions</p>
-          <h2 className="section-title">Before you order.</h2>
+          <p className="eyebrow">Aksar poochhe jaane wale sawaal</p>
+          <h2 className="section-title">Order se pehle.</h2>
           <div className="faq-list">
             {faqs.map((faq) => (
               <details key={faq.name}>

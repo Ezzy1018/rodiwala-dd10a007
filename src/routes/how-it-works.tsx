@@ -8,7 +8,7 @@ export const Route = createFileRoute("/how-it-works")({
     seoHead({
       title: "How Construction Material Quotes Work in India | Rodiwala",
       description:
-        "See how Rodiwala confirms requirements, availability, pricing and delivery for sites across India.",
+        "Requirement bhejo, availability aur delivered rate check hota hai, phir dispatch ka time fix. Rodiwala ka poora quote process, India bhar ki sites ke liye.",
       path: "/how-it-works",
     }),
   component: Page,
@@ -17,26 +17,26 @@ function Page() {
   return (
     <ContentPage
       eyebrow="How it works"
-      title="A useful quote starts with a complete requirement."
-      intro="The process is designed to reduce repeated questions and make delivery assumptions clear before dispatch."
+      title="Requirement bhejo, hum rate aur delivery check karenge."
+      intro="Process aisa rakha hai ki baar-baar sawaal na poochhne padein aur dispatch se pehle delivery ki har baat clear ho jaye."
       quoteMaterial="Other material"
       image={deliveryImage}
     >
       <ProcessShowcase />
       <section className="result-panel">
         <div>
-          <p className="eyebrow text-accent">What you receive</p>
-          <h2>A quote built around the actual site.</h2>
+          <p className="eyebrow text-accent">Aapko kya milta hai</p>
+          <h2>Quote jo aapki site ke hisaab se bana ho.</h2>
         </div>
         <div className="result-list">
-          <span>Material and specification basis</span>
-          <span>Delivered or ex-yard price basis</span>
-          <span>Freight clarity</span>
+          <span>Material aur specification ka basis</span>
+          <span>Delivered ya ex-yard rate ka basis</span>
+          <span>Freight clear</span>
           <span>Expected delivery timing</span>
         </div>
       </section>
       <p className="mt-8 text-center text-muted-foreground">
-        Your requirement goes directly to a person—there is no account, cart or automated checkout.
+        Aapki requirement seedhe ek insaan tak jaati hai — na account, na cart, na automated checkout.
       </p>
     </ContentPage>
   );

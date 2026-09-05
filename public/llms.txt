@@ -6,18 +6,18 @@ Rodiwala is a quote-led construction material sourcing service. It does not clai
 
 ## Core materials
 
-- [Construction materials catalogue and buying guide](https://rodiwala.vercel.app/buy-construction-material): 10 mm aggregate (rodi), 20 mm aggregate (rodi), stone dust, M-sand / crushed sand, and ready-mix concrete (RMC), plus how to send a complete requirement and receive a quote.
-- [10 mm aggregate](https://rodiwala.vercel.app/aggregate/10-mm-rodi)
-- [20 mm aggregate](https://rodiwala.vercel.app/aggregate/20-mm-rodi)
-- [Stone dust](https://rodiwala.vercel.app/stone-dust)
-- [M-sand / crushed sand](https://rodiwala.vercel.app/m-sand)
-- [Ready-mix concrete](https://rodiwala.vercel.app/ready-mix-concrete)
+- [Construction materials catalogue and buying guide](https://rodiwala.lovable.app/buy-construction-material): 10 mm aggregate (rodi), 20 mm aggregate (rodi), stone dust, M-sand / crushed sand, and ready-mix concrete (RMC), plus how to send a complete requirement and receive a quote.
+- [10 mm aggregate](https://rodiwala.lovable.app/aggregate/10-mm-rodi)
+- [20 mm aggregate](https://rodiwala.lovable.app/aggregate/20-mm-rodi)
+- [Stone dust](https://rodiwala.lovable.app/stone-dust)
+- [M-sand / crushed sand](https://rodiwala.lovable.app/m-sand)
+- [Ready-mix concrete](https://rodiwala.lovable.app/ready-mix-concrete)
 
 ## Delivery and contact
 
-- [Delivery areas and feasibility](https://rodiwala.vercel.app/delivery-areas)
-- [How the quote process works](https://rodiwala.vercel.app/how-it-works)
-- [Contact Rodiwala](https://rodiwala.vercel.app/contact): call +91 94161 65465 or send a requirement on WhatsApp.
+- [Delivery areas and feasibility](https://rodiwala.lovable.app/delivery-areas)
+- [How the quote process works](https://rodiwala.lovable.app/how-it-works)
+- [Contact Rodiwala](https://rodiwala.lovable.app/contact): call +91 94161 65465 or send a requirement on WhatsApp.
 
 ## Useful requirement details
 

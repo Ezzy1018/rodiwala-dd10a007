@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ContentPage } from "@/components/content-page";
-import { phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
+import { detailedQuoteMessage, phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
 import { ArrowRight, CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import heroImage from "@/assets/rodiwala-yard-hero.jpg";
 import { seoHead } from "@/lib/seo";
@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
     seoHead({
       title: "Contact Rodiwala for Construction Materials",
       description:
-        "Call or WhatsApp Rodiwala from anywhere in India with your construction material requirement.",
+        "Construction material chahiye? Rodiwala ko WhatsApp par material, quantity, location aur date bhejo, ya call karke poochho. India bhar se enquiry.",
       path: "/contact",
     }),
   component: Page,
@@ -18,40 +18,38 @@ function Page() {
   return (
     <ContentPage
       eyebrow="Contact"
-      title="Talk to Rodiwala about your site requirement."
-      intro="Share the material, quantity, delivery location anywhere in India and required date for the most useful response."
+      title="Site par kya chahiye? WhatsApp par requirement bhejo."
+      intro="Material, quantity, delivery location (India mein kahin bhi) aur required date bhej do — jawab utna hi kaam ka milega."
       image={heroImage}
     >
       <div className="contact-layout">
         <div className="contact-actions">
           <a href={`tel:${phoneHref}`}>
             <Phone />
-            <span>Call us</span>
-            <strong>Tap to call</strong>
+            <span>Call karo</span>
+            <strong>Tap karke call karo</strong>
             <ArrowRight />
           </a>
           <a
-            href={whatsappUrl(
-              "Hi Rodiwala, I have a construction material requirement. Material: [please add]. Quantity: [please add]. Delivery location: [please add]. Required by: [please add]. Please confirm availability and delivered price.",
-            )}
+            href={whatsappUrl(detailedQuoteMessage)}
             target="_blank"
             rel="noreferrer"
           >
             <MessageCircle />
             <span>WhatsApp</span>
-            <strong>Send a requirement</strong>
+            <strong>Requirement bhejo</strong>
             <ArrowRight />
           </a>
         </div>
         <div className="contact-checklist">
-          <p className="eyebrow">Before you contact us</p>
-          <h2 className="section-title">Four details make the conversation faster.</h2>
+          <p className="eyebrow">Contact karne se pehle</p>
+          <h2 className="section-title">Ye chaar details baat jaldi aage badha deti hain.</h2>
           <ul>
             {[
-              "Material and size or grade",
-              "Quantity and unit",
-              "Delivery city, locality or pin code",
-              "Required date and access notes",
+              "Material aur size ya grade",
+              "Quantity aur unit",
+              "Delivery city, locality ya pin code",
+              "Required date aur access note",
             ].map((item) => (
               <li key={item}>
                 <CheckCircle2 />
@@ -65,13 +63,13 @@ function Page() {
             rel="noreferrer"
             className="btn-primary mt-7"
           >
-            Get a quote <ArrowRight size={17} />
+            WhatsApp par quote lo <ArrowRight size={17} />
           </a>
         </div>
       </div>
       <p className="mt-10 text-sm text-muted-foreground">
-        Business hours and a public address have not yet been provided, so they are intentionally
-        omitted.
+        Business hours aur public address abhi confirm nahi hue hain, isliye jaan-boojhkar nahi
+        likhe gaye.
       </p>
     </ContentPage>
   );
