@@ -21,6 +21,12 @@ function Page() {
       intro="10 mm and 20 mm are distinct requirements. Compare common requests, then send the selected size, quantity, location and date."
       image={getMaterial("20-mm-rodi").image}
     >
+      <div className="mb-10 max-w-2xl">
+        <h2 className="section-title">Core aggregate sizes</h2>
+        <p className="mt-3 text-muted-foreground">
+          Pick the size your contractor or engineer has specified, then send the requirement.
+        </p>
+      </div>
       <div className="catalogue-grid catalogue-grid-pair">
         {aggregate.map((item) => (
           <MaterialTile material={item} key={item.slug} />
