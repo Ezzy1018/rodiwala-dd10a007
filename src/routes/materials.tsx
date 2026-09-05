@@ -4,4 +4,5 @@ export const Route = createFileRoute("/materials")({
   beforeLoad: () => {
     throw redirect({ to: "/buy-construction-material", replace: true });
   },
+  component: () => null,
 });

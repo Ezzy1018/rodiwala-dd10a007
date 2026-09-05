@@ -83,35 +83,6 @@ function Page() {
           </div>
         </section>
 
-        <section className="mt-20 grid gap-8 border-t border-border pt-12 md:grid-cols-[.8fr_1.2fr]">
-          <div>
-            <p className="eyebrow">Beyond the core range</p>
-            <h2 className="section-title">Need something else?</h2>
-          </div>
-          <div>
-            <p className="text-lg text-muted-foreground">
-              Cement, TMT steel, bricks, blocks, pavers, sand and other project materials can be
-              requested. Share the exact specification so source and delivery feasibility can be
-              checked.
-            </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              {["Cement", "TMT steel", "Bricks & blocks", "Pavers", "Other sand"].map((x) => (
-                <span className="request-chip" key={x}>
-                  {x}
-                </span>
-              ))}
-            </div>
-            <a
-              href={quoteHref("Other materials")}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary mt-8"
-            >
-              Send another requirement →
-            </a>
-          </div>
-        </section>
-
         <section className="mt-20 grid gap-6 md:grid-cols-4">
           {[
             "Choose the material",
@@ -146,6 +117,35 @@ function Page() {
             A delivered quote depends on the exact requirement. That is why the fastest route is a
             complete WhatsApp message, not an incomplete cart.
           </p>
+        </section>
+
+        <section className="mt-20 grid gap-8 border-t border-border pt-12 md:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <p className="eyebrow">Beyond the core range</p>
+            <h2 className="section-title">Need something else?</h2>
+          </div>
+          <div>
+            <p className="text-lg text-muted-foreground">
+              Cement, TMT steel, bricks, blocks, pavers, sand and other project materials can be
+              requested. Share the exact specification so source and delivery feasibility can be
+              checked.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              {["Cement", "TMT steel", "Bricks & blocks", "Pavers", "Other sand"].map((x) => (
+                <span className="request-chip" key={x}>
+                  {x}
+                </span>
+              ))}
+            </div>
+            <a
+              href={quoteHref("Other materials")}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary mt-8"
+            >
+              Send another requirement →
+            </a>
+          </div>
         </section>
 
         <section className="mt-20 max-w-3xl">
