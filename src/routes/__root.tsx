@@ -80,6 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Rodiwala — Construction Material Supply" },
       { name: "description", content: "Request delivered pricing for aggregate, stone dust, M-sand and RMC in Delhi NCR and Uttar Pradesh." },
+      { name: "google-site-verification", content: "rAQ-OmHAHp04oz5S15BPMEZ389WWLbTCvR0_AFSA7G4" },
       { name: "author", content: "Rodiwala" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
