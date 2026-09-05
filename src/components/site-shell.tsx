@@ -15,7 +15,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
   return <div className="min-h-screen bg-background pb-18 md:pb-0">
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
-      <div className="mx-auto grid h-18 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto grid h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 sm:px-6 lg:px-8">
         <Logo />
         <div className="flex shrink-0 items-center gap-2">
           <nav className="mr-3 hidden items-center gap-6 lg:flex" aria-label="Main navigation">
@@ -29,10 +29,10 @@ export function SiteShell({ children }: { children: ReactNode }) {
       {open && <nav className="border-t border-border bg-background px-4 py-3 lg:hidden" aria-label="Mobile navigation">{nav.map(([label,to]) => <Link key={to} to={to} onClick={() => setOpen(false)} className="block border-b border-border py-3 font-display font-semibold text-foreground last:border-0">{label}</Link>)}</nav>}
     </header>
     {children}
-    <footer className="border-t border-border bg-background">
-      <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-10 sm:flex-row sm:items-end sm:justify-between">
-        <div><Logo/><p className="mt-3 max-w-md text-sm text-muted-foreground">Construction-material sourcing for Delhi NCR and Uttar Pradesh. Availability, delivered pricing and feasibility are confirmed for every requirement.</p></div>
-        <div className="flex gap-5 text-sm font-medium text-primary"><Link to="/contact">Contact</Link><Link to="/request-quote">Request quote</Link></div>
+     <footer className="border-t border-primary/15 bg-primary text-primary-foreground">
+       <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-12 sm:flex-row sm:items-end sm:justify-between">
+         <div className="footer-brand"><Logo/><p className="mt-3 max-w-md text-sm text-primary-foreground/65">Construction-material sourcing for Delhi NCR and Uttar Pradesh. Availability, delivered pricing and feasibility are confirmed for every requirement.</p></div>
+         <div className="flex gap-5 text-sm font-medium text-primary-foreground"><Link to="/contact">Contact</Link><Link to="/request-quote">Request quote</Link></div>
       </div>
     </footer>
     <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-border bg-background p-2 pb-[calc(.5rem+env(safe-area-inset-bottom))] md:hidden">
