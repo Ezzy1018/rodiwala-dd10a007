@@ -5,8 +5,7 @@ import { Logo } from "./logo";
 import { phoneHref, quoteHref, whatsappUrl } from "@/lib/materials";
 
 const nav = [
-  ["Buy materials", "/buy-construction-material"],
-  ["Materials", "/materials"],
+  ["Materials", "/buy-construction-material"],
   ["Delivery areas", "/delivery-areas"],
   ["How it works", "/how-it-works"],
   ["About", "/about"],
