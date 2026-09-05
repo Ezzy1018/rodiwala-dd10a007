@@ -20,6 +20,12 @@ function Page() {
       intro="Browse the five core materials, compare their common applications and send the exact quantity, site location anywhere in India and required date for delivered pricing."
       image={getMaterial("20-mm-rodi").image}
     >
+      <div className="mb-10 max-w-2xl">
+        <h2 className="section-title">Core construction materials</h2>
+        <p className="mt-3 text-muted-foreground">
+          Five core materials, quoted against your quantity, site and date.
+        </p>
+      </div>
       <div className="catalogue-grid">
         {materials.map((m) => (
           <MaterialTile material={m} key={m.slug} />
