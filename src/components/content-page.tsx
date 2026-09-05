@@ -13,7 +13,7 @@ export function ContentPage({
   children,
   quoteMaterial,
   image = heroImage,
-  imageAlt = `${title} for construction sites`,
+  imageAlt = `${title} — construction material for sites`,
 }: {
   eyebrow: string;
   title: string;
@@ -51,7 +51,7 @@ export function MaterialPage({ material }: { material: Material }) {
   return (
     <>
       <ContentPage
-        eyebrow="Core material"
+        eyebrow="Site material"
         title={material.name}
         intro={material.description}
         quoteMaterial={material.name}
@@ -60,8 +60,8 @@ export function MaterialPage({ material }: { material: Material }) {
       >
         <div className="detail-grid">
           <section>
-            <p className="eyebrow">Common requirements</p>
-            <h2 className="section-title">Where this material is requested</h2>
+            <p className="eyebrow">Kahan use hota hai</p>
+            <h2 className="section-title">Ye material aam taur par kahan use hota hai</h2>
             <div className="mt-7 grid gap-3">
               {material.applications.map((item, index) => (
                 <div className="numbered-row" key={item}>
@@ -73,13 +73,13 @@ export function MaterialPage({ material }: { material: Material }) {
           </section>
           <section className="checklist-panel">
             <p className="eyebrow text-accent">Quote checklist</p>
-            <h2>Have these details ready</h2>
+            <h2>Quote ke liye ye details bhejo</h2>
             <ul>
               {[
-                "Quantity and preferred unit",
-                "Delivery locality or pin code",
+                "Quantity aur unit",
+                "Delivery locality ya pin code",
                 "Required delivery date",
-                "Vehicle access and unloading notes",
+                "Vehicle access aur unloading note",
               ].map((item) => (
                 <li key={item}>
                   <CheckCircle2 size={20} />
@@ -88,7 +88,7 @@ export function MaterialPage({ material }: { material: Material }) {
               ))}
             </ul>
             <div className="spec-note">
-              <strong>Before ordering</strong>
+              <strong>Order se pehle</strong>
               <p>{material.quoteNote}</p>
             </div>
           </section>
@@ -96,11 +96,11 @@ export function MaterialPage({ material }: { material: Material }) {
         <section className="mt-20">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Continue browsing</p>
-              <h2 className="section-title">Related site materials</h2>
+              <p className="eyebrow">Aur dekho</p>
+              <h2 className="section-title">Site ke doosre materials</h2>
             </div>
             <Link to="/buy-construction-material" className="text-link">
-              Full catalogue <ArrowRight size={16} />
+              Poora catalogue dekho <ArrowRight size={16} />
             </Link>
           </div>
           <div className="catalogue-grid catalogue-grid-compact">
@@ -128,7 +128,7 @@ export function CardLink({ to, title, text }: { to: string; title: string; text:
       <h3 className="font-display text-lg font-bold">{title}</h3>
       <p className="mt-2 text-sm text-muted-foreground">{text}</p>
       <span className="text-link mt-5">
-        Open page <ArrowRight size={15} />
+        Page kholo <ArrowRight size={15} />
       </span>
     </Link>
   );
@@ -139,14 +139,14 @@ export function MaterialTile({ material }: { material: Material }) {
     <article className="catalogue-tile">
       <img
         src={material.image}
-        alt={`Illustrative ${material.name}`}
+        alt={`${material.name} — illustrative image`}
         width={800}
         height={680}
         loading="lazy"
       />
       <div className="catalogue-shade" />
       <div className="catalogue-copy">
-        <p>Core material</p>
+        <p>Site material</p>
         <h3>{material.shortName}</h3>
         <span>{material.description}</span>
       </div>
@@ -156,12 +156,12 @@ export function MaterialTile({ material }: { material: Material }) {
           target="_blank"
           rel="noreferrer"
           className="catalogue-action"
-          aria-label={`Get a quote for ${material.name} on WhatsApp`}
+          aria-label={`${material.name} ka quote WhatsApp par lo`}
         >
-          Get a quote <ArrowRight size={17} />
+          Iska quote lo <ArrowRight size={17} />
         </a>
         <Link to={material.href} className="catalogue-link">
-          Details
+          Details dekho
         </Link>
       </div>
     </article>
