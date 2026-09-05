@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "https://rodiwala.vercel.app";
+const BASE_URL = "https://rodiwala.lovable.app";
 
 interface SitemapEntry {
   path: string;
@@ -18,6 +18,7 @@ const entries: SitemapEntry[] = [
   { path: "/stone-dust", changefreq: "monthly", priority: "0.8" },
   { path: "/m-sand", changefreq: "monthly", priority: "0.8" },
   { path: "/ready-mix-concrete", changefreq: "monthly", priority: "0.8" },
+  { path: "/cement", changefreq: "monthly", priority: "0.8" },
   { path: "/delivery-areas", changefreq: "monthly", priority: "0.7" },
   { path: "/how-it-works", changefreq: "monthly", priority: "0.6" },
   { path: "/about", changefreq: "yearly", priority: "0.5" },
